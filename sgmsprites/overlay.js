@@ -318,3 +318,50 @@ function setBackground() {
 r.addEventListener("click", setBackground);
 g.addEventListener("click", setBackground);
 b.addEventListener("click", setBackground);
+
+var a = document.getElementById("a");
+var light = document.createElement("div");
+var mouse = {};
+
+function updateLight(e) {
+	if (e.clientX && e.clientY) {
+		mouse.x = e.clientX;
+		mouse.y = e.clientY;
+	}
+	if (mouse.x && mouse.y) {
+		light.style.left = window.scrollX + mouse.x + "px";
+		light.style.top = window.scrollY + mouse.y + "px";
+	}
+}
+
+function enableLight() {
+	light.style.position = "absolute";
+	light.style.width = "200vmax";
+	light.style.height = "200vmax";
+	light.style.transform = "translate(-50%, -50%)";
+	light.style.background = "radial-gradient(#f00, #000 33%)";
+	light.style.mixBlendMode = "overlay";
+	light.style.pointerEvents = "none";
+	window.addEventListener("mousemove", updateLight);
+	window.addEventListener("scroll", updateLight);
+	window.addEventListener("resize", updateLight);
+	document.body.appendChild(light);
+}
+
+function disableLight() {
+	window.removeEventListener("mousemove", updateLight);
+	window.removeEventListener("scroll", updateLight);
+	window.removeEventListener("resize", updateLight);
+	light.remove();
+}
+
+function toggleLight() {
+	if (a.checked) {
+		enableLight();
+	}
+	else {
+		disableLight();
+	}
+}
+
+a.addEventListener("click", toggleLight);
