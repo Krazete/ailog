@@ -17,6 +17,7 @@
 			left: 190px;
 		}
 		#atk, #def {
+			position: absolute;
 			top: 515px;
 			width: 60px;
 			cursor: pointer;
@@ -184,8 +185,8 @@
 <body>
 	<img id="base" src="base.PNG">
 	<img id="animation" src="animation.gif">
-	<img id="atk" src="SkillTreeNode-Damage.png">
-	<img id="def" src="SkillTreeNode-ArmorUp.png">
+	<div id="atk"><img src="SkillTreeNode-Damage.png"></div>
+	<div id="def"><img src="SkillTreeNode-ArmorUp.png"></div>
 	<img id="moveset-atk" src="loadout-0.PNG">
 	<img id="moveset-def" src="loadout-0.PNG">
 	<img id="movebox" src="moves.PNG">
