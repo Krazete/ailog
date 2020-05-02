@@ -1,0 +1,32 @@
+<audio src="melty.mp4"></audio>
+<audio src="meltyblack.mp4"></audio>
+<div id="text"></div>
+<script>
+	var text = document.getElementById("text");
+	var mp4 = document.getElementsByTagName("audio");
+	function toggleAudio() {
+		if (mp4[0].paused || mp4[1].paused) {
+			mp4[0].play();
+			mp4[1].play();
+		}
+		else {
+			mp4[0].pause();
+			mp4[1].pause();
+		}
+	}
+	function switchAudio() {
+		if (mp4[0].volume) {
+			mp4[0].volume = 0;
+			mp4[1].volume = 0.75;
+			text.innerHTML = "BLACK AI";
+		}
+		else {
+			mp4[0].volume = 1;
+			mp4[1].volume = 0;
+			text.innerHTML = "KIZUNA AI";
+		}
+		setTimeout(switchAudio, 1000);
+	}
+	window.addEventListener("click", toggleAudio);
+	switchAudio();
+</script>
