@@ -1,21 +1,21 @@
 <audio src="melty.mp4"></audio>
 <audio src="meltyblack.mp4"></audio>
 <div id="text"></div>
-<div id="status"></div>
+<div id="state"></div>
 <script>
 	var text = document.getElementById("text");
-	var status = document.getElementById("status");
+	var state = document.getElementById("state");
 	var mp4 = document.getElementsByTagName("audio");
 	function toggleAudio() {
 		if (mp4[0].paused || mp4[1].paused) {
 			mp4[0].play();
 			mp4[1].play();
-			status.innerHTML = "PLAYING";
+			state.innerHTML = "PLAYING";
 		}
 		else {
 			mp4[0].pause();
 			mp4[1].pause();
-			status.innerHTML = "PAUSED";
+			state.innerHTML = "PAUSED";
 		}
 	}
 	function switchAudio() {
