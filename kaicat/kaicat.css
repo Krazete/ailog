@@ -1,18 +1,57 @@
 body {
 	background: black;
 	color: white;
+	font-family: 'Roboto', 'Arial', sans-serif;
 	display: grid;
 	grid-template-columns: repeat(8, 12.5%);
+	margin: 4px;
 }
 
-div {
-	overflow: hidden;
+.unit {
+	text-decoration: none;
+	padding: 4px;
 }
 
-img {
+.sentiment {
+	color: black;
+	font-size: 12px;
+	text-align: center;
+	position: relative;
+	height: 12px;
 	width: 100%;
+	border-radius: 4px 4px 0 0;
 }
 
-p {
-	margin: 0;
+.thumb {
+	width: 100%;
+	margin: -10% 0;
+}
+
+.title {
+	background: pink;
+	color: black;
+	font-size: 14px;
+	line-height: 20px;
+	position: relative;
+	min-height: 60px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    padding: 0 4px;
+	border-radius: 0 0 4px 4px;
+}
+
+.viewcount {
+	color: gray;
+	font-size: 12px;
+	position: relative;
+	float: left;
+}
+
+.date {
+	color: gray;
+	font-size: 12px;
+	position: relative;
+	float: right;
 }

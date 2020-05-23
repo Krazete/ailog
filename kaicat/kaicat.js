@@ -17,11 +17,45 @@ function loadClient() {
 
 var qualities = new Set();
 
-function execute(pageToken) {
+function loadStatistics(videoIds) {
+	var params = {
+		"part": "statistics",
+		"id": videoIds
+	};
+
+	function onload(response) {
+		for (var item of response.result.items) {
+			var unit = document.getElementById(item.id);
+			if (unit) {
+				var views = parseInt(item.statistics.viewCount);
+				var likes = parseInt(item.statistics.likeCount);
+				var dislikes = parseInt(item.statistics.dislikeCount);
+				var rating = parseInt(100 * likes / (likes + dislikes));
+
+				var sentiment = unit.getElementsByClassName("sentiment")[0];
+				sentiment.style.backgroundImage = "linear-gradient(to right, #3ea6ff " + rating + "%, #606060 " + rating + "%)";
+				sentiment.innerHTML = Math.floor(rating) + "%";
+
+				var viewcount = unit.getElementsByClassName("viewcount")[0];
+				viewcount.innerHTML = (
+					views > 1e9 ? Math.floor(views / 1e9) + "B" :
+					views > 1e6 ? Math.floor(views / 1e6) + "M" :
+					views > 1e3 ? Math.floor(views / 1e3) + "K" :
+					views
+				) + " views";
+			}
+		}
+		console.log(response);
+	}
+
+	return gapi.client.youtube.videos.list(params).then(onload, onerror);
+}
+
+function loadPlaylist(pageToken) {
 	var params = {
 		"part": "snippet",
-		// "playlistId": "UU4YaOt1yT-ZeyB0OmxHgolA", /* A.I.Channel */
-		"playlistId": "UUbFwe3COkDrbNsbMyGNCsDg", /* A.I.Games */
+		"playlistId": "UU4YaOt1yT-ZeyB0OmxHgolA", /* A.I.Channel */
+		// "playlistId": "UUbFwe3COkDrbNsbMyGNCsDg", /* A.I.Games */
 		"maxResults": 50
 	};
 
@@ -30,34 +64,64 @@ function execute(pageToken) {
 	}
 
 	function onload(response) {
-		// console.log(response.result, response.result.items);
+		var broken = false;
+		var videoIds = [];
 
 		for (var item of response.result.items) {
-			console.log(item.snippet.title, item.snippet.publishedAt);
 			var timestamp = new Date(item.snippet.publishedAt);
 			if (timestamp > new Date("2020-05-09T15:00:00Z")) { /* Board Game Arena: Love Letter */
 				continue;
 			}
 			else if (timestamp < new Date("2019-05-24T15:00:00Z")) { /* Kizuna AI's Every Day #1 */
-				return;
+				broken = true;
+				break;
 			}
 
-			var div = document.createElement("div");
+			var unit = document.createElement("a");
+			unit.id = item.snippet.resourceId.videoId;
+			unit.className = "unit";
+			unit.target = "_blank";
+			unit.href = "https://youtu.be/" + item.snippet.resourceId.videoId;
+			document.body.appendChild(unit);
+
+			var sentiment = document.createElement("div");
+			sentiment.className = "sentiment";
+			unit.appendChild(sentiment);
 
 			var img = new Image();
-			img.src = item.snippet.thumbnails.standard ? item.snippet.thumbnails.standard.url : item.snippet.thumbnails.default.url;
+			img.className = "thumb";
 			img.alt = item.snippet.title;
-			div.appendChild(img);
+			img.src = (
+				item.snippet.thumbnails.high ? item.snippet.thumbnails.high.url :
+				item.snippet.thumbnails.medium ? item.snippet.thumbnails.medium.url :
+				item.snippet.thumbnails.default ? item.snippet.thumbnails.default.url :
+				item.snippet.thumbnails.standard ? item.snippet.thumbnails.standard.url :
+				item.snippet.thumbnails.maxres ? item.snippet.thumbnails.maxres.url :
+				"https://i.ytimg.com/"
+			);
+			unit.appendChild(img);
 
-			var p = document.createElement("p");
-			p.innerHTML = item.snippet.title;
-			div.appendChild(p);
+			var title = document.createElement("div");
+			title.className = "title";
+			title.innerHTML = item.snippet.title;
+			unit.appendChild(title);
 
-			document.body.appendChild(div);
+			var viewcount = document.createElement("div");
+			viewcount.className = "viewcount";
+			unit.appendChild(viewcount);
+
+			var date = document.createElement("div");
+			date.className = "date";
+			date.innerHTML = new Date(item.snippet.publishedAt).toLocaleDateString();
+			unit.appendChild(date);
+
+			videoIds.push(item.snippet.resourceId.videoId);
 		}
 
-		if ("nextPageToken" in response.result) {
-			execute(response.result.nextPageToken);
+		loadStatistics(videoIds);
+
+		if (!broken && "nextPageToken" in response.result) {
+			loadPlaylist(response.result.nextPageToken);
 		}
 	}
 
@@ -66,7 +130,7 @@ function execute(pageToken) {
 
 function init() {
 	gapi.load("client", function () {
-		loadClient().then(execute);
+		loadClient().then(loadPlaylist);
 	});
 }
 
