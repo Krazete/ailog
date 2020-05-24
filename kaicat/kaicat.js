@@ -16,10 +16,14 @@ function loadClient() {
 }
 
 function parseDuration(duration) {
-	var h = duration.match(/\d+H/);
-	var m = duration.match(/\d+M/);
-	var s = duration.match(/\d+S/);
-	return (h ? h : m ? m : s)[0].toLowerCase();
+	var hMatch = duration.match(/(\d+)H/);
+	var mMatch = duration.match(/(\d+)M/);
+	var sMatch = duration.match(/(\d+)S/);
+	var h = hMatch ? parseInt(hMatch[1]) : 0;
+	var m = mMatch ? parseInt(mMatch[1]) : 0;
+	var s = sMatch ? parseInt(sMatch[1]) : 0;
+
+	return (h ? h + ":" + m.toString().padStart(2, "0") : m) + ":" + s.toString().padStart(2, "0");
 }
 
 function loadStatistics(videoIds) {
