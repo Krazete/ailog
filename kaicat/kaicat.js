@@ -15,11 +15,16 @@ function loadClient() {
 	return gapi.client.load(rest).then(onload, onerror);
 }
 
-var qualities = new Set();
+function parseDuration(duration) {
+	var h = duration.match(/\d+H/);
+	var m = duration.match(/\d+M/);
+	var s = duration.match(/\d+S/);
+	return (h ? h : m ? m : s)[0].toLowerCase();
+}
 
 function loadStatistics(videoIds) {
 	var params = {
-		"part": "statistics",
+		"part": ["statistics", "contentDetails"],
 		"id": videoIds
 	};
 
@@ -27,10 +32,14 @@ function loadStatistics(videoIds) {
 		for (var item of response.result.items) {
 			var unit = document.getElementById(item.id);
 			if (unit) {
+				var duration = parseDuration(item.contentDetails.duration);
 				var views = parseInt(item.statistics.viewCount);
 				var likes = parseInt(item.statistics.likeCount);
 				var dislikes = parseInt(item.statistics.dislikeCount);
 				var rating = parseInt(100 * likes / (likes + dislikes));
+
+				var thumb = unit.getElementsByClassName("thumb")[0];
+				thumb.dataset.duration = duration;
 
 				var sentiment = unit.getElementsByClassName("sentiment")[0];
 				sentiment.style.backgroundImage = "linear-gradient(to right, #3ea6ff " + rating + "%, #606060 " + rating + "%)";
@@ -51,6 +60,10 @@ function loadStatistics(videoIds) {
 	return gapi.client.youtube.videos.list(params).then(onload, onerror);
 }
 
+function byTime(a, b) {
+	return new Date(b.snippet.publishedAt) - new Date(a.snippet.publishedAt);
+}
+
 function loadPlaylist(channel, pageToken) {
 	var container = document.getElementById(channel);
 
@@ -69,10 +82,11 @@ function loadPlaylist(channel, pageToken) {
 	}
 
 	function onload(response) {
+		console.log(response);
 		var broken = false;
 		var videoIds = [];
 
-		for (var item of response.result.items) {
+		for (var item of response.result.items.sort(byTime)) {
 			var timestamp = new Date(item.snippet.publishedAt);
 			if (timestamp > new Date("2020-05-09T15:00:00Z")) { /* Board Game Arena: Love Letter */
 				continue;
@@ -109,6 +123,16 @@ function loadPlaylist(channel, pageToken) {
 			);
 			thumb.appendChild(img);
 
+			var attendance = document.createElement("div");
+			attendance.className = "attendance";
+			unit.appendChild(attendance);
+
+			for (var member of ["ai", "black", "love", "pii", "bro"]) {
+				var slot = document.createElement("div");
+				slot.className = member;
+				attendance.appendChild(slot);
+			}
+
 			var title = document.createElement("div");
 			title.className = "title";
 			title.innerHTML = item.snippet.title;
@@ -129,7 +153,7 @@ function loadPlaylist(channel, pageToken) {
 		loadStatistics(videoIds);
 
 		if (!broken && "nextPageToken" in response.result) {
-			loadPlaylist(channel, response.result.nextPageToken);
+			// loadPlaylist(channel, response.result.nextPageToken);
 		}
 	}
 
@@ -140,7 +164,7 @@ function init() {
 	function callback() {
 		loadClient().then(function () {
 			loadPlaylist("aichannel");
-			loadPlaylist("aigames");
+			// loadPlaylist("aigames");
 		});
 	}
 
