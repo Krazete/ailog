@@ -77,11 +77,11 @@ h1 {
 }
 .attendance .ai {
 	background-image: url('icon/ai.png');
-	background-size: 80% auto;
+	background-size: auto 100%;
 }
 .attendance .black {
 	background-image: url('icon/black.png');
-	background-size: 80% auto;
+	background-size: auto 100%;
 }
 .attendance .love {
 	background-image: url('icon/love.png');
@@ -93,7 +93,7 @@ h1 {
 }
 .attendance .bro {
 	background-image: url('icon/bro.png');
-	background-size: 80% auto;
+	background-size: auto 100%;
 }
 
 .title {
