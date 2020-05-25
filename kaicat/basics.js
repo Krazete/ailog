@@ -601,3 +601,11 @@ function newUnit(id, title, thumbnail, timestamp, duration, rating, views) {
 
 	return unit;
 }
+
+function randomizeFavicon() {
+    var favicon = document.querySelector("link[rel='shortcut icon']");
+    var r = Math.floor(5 * Math.random());
+    favicon.href = "icon/" + ["ai", "black", "love", "pii", "bro"][r] + ".png";
+}
+
+window.addEventListener("DOMContentLoaded", randomizeFavicon);
