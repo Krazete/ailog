@@ -21,7 +21,7 @@ var channels = {
 function onerror(error) {
 	console.error(error);
 	if (error.status == 403) {
-		location = "static.html";		
+		location = "static.html";
 	}
 }
 
@@ -77,6 +77,8 @@ function byTime(a, b) {
 }
 
 function loadPlaylist(channel, pageToken) {
+	var container = document.getElementById(channel);
+
 	var params = {
 		"part": "snippet",
 		"playlistId": (
@@ -118,7 +120,7 @@ function loadPlaylist(channel, pageToken) {
 				"https://i.ytimg.com/"
 			);
 
-			newUnit(channel, id, title, thumbnail, published);
+			container.appendChild(newUnit(id, title, thumbnail, published));
 
 			channels[channel].videos[id] = {
 				"title": title,
@@ -185,6 +187,15 @@ function init() {
 	}
 
 	gapi.load("client", callback);
+}
+
+function stringifyLoadedData() {
+	for (var channel in channels) {
+		if (!channels[channel].initialized || channels[channel].nextPageToken) {
+			console.warn("Data for", channel, "has not been fully loaded.");
+		}
+	}
+	return JSON.stringify(channels);
 }
 
 window.addEventListener("DOMContentLoaded", init);

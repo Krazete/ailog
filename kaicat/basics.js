@@ -26,15 +26,12 @@ function parseViews(views) {
 	) + " views";
 }
 
-function newUnit(channel, videoId, title, thumbnail, timestamp, duration, rating, views) {
-	var container = document.getElementById(channel);
-
+function newUnit(videoId, title, thumbnail, timestamp, duration, rating, views) {
 	var unit = document.createElement("a");
 	unit.id = videoId;
 	unit.className = "unit";
 	unit.target = "_blank";
 	unit.href = "https://youtu.be/" + videoId;
-	container.appendChild(unit);
 
 	var sentiment = document.createElement("div");
 	sentiment.className = "sentiment";
@@ -82,4 +79,6 @@ function newUnit(channel, videoId, title, thumbnail, timestamp, duration, rating
 	date.className = "date";
 	date.innerHTML = new Date(timestamp).toLocaleDateString();
 	unit.appendChild(date);
+
+	return unit;
 }
