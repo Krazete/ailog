@@ -105,6 +105,7 @@ body {
 
 .thumb {
 	position: relative;
+	display: block;
 	overflow: hidden;
 }
 
@@ -125,43 +126,47 @@ body {
 }
 
 .attendance {
-	background: linear-gradient(90deg, pink, yellow);
+	background: #606060;
 	display: flex;
 	padding: 0 2px;
 }
 
 .attendance div {
-	background-color: black;
-	background-position: center;
-	background-repeat: no-repeat;
 	height: 20px;
 	flex: 1;
 	border-radius: 4px;
 	margin: 2px;
 }
-.attendance .ai {
+.ai .ai,
+.black .black,
+.love .love,
+.pii .pii,
+.bro .bro {
+	background-color: black;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+}
+.ai .ai {
 	background-image: url('icon/ai.png');
-	background-size: auto 100%;
 }
-.attendance .black {
+.black .black {
 	background-image: url('icon/black.png');
-	background-size: auto 100%;
 }
-.attendance .love {
+.love .love {
 	background-image: url('icon/love.png');
 	background-size: auto 80%;
 }
-.attendance .pii {
+.pii .pii {
 	background-image: url('icon/pii.png');
 	background-size: auto 80%;
 }
-.attendance .bro {
+.bro .bro {
 	background-image: url('icon/bro.png');
-	background-size: auto 100%;
 }
 
 .title {
-	background: linear-gradient(90deg, pink, yellow);
+	background: #606060;
 	color: black;
 	font-size: 14px;
 	line-height: 20px;
