@@ -111,7 +111,14 @@ function loadPlaylist(channel, pageToken) {
 
 			var id = item.snippet.resourceId.videoId;
 			var title = item.snippet.title;
-			var thumbnail = item.snippet.thumbnails.medium.url;
+			var thumbnail = (
+				item.snippet.thumbnails.high ? item.snippet.thumbnails.high.url :
+				item.snippet.thumbnails.medium ? item.snippet.thumbnails.medium.url :
+				item.snippet.thumbnails.default ? item.snippet.thumbnails.default.url :
+				item.snippet.thumbnails.standard ? item.snippet.thumbnails.standard.url :
+				item.snippet.thumbnails.maxres ? item.snippet.thumbnails.maxres.url :
+				"https://i.ytimg.com/"
+			);
 
 			container.appendChild(newUnit(id, title, thumbnail, timestamp));
 

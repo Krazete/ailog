@@ -118,6 +118,7 @@ body {
 
 .thumb img {
 	width: 100%;
+	margin: -10% 0;
 }
 
 .thumb:after {
