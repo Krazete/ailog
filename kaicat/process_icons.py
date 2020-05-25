@@ -3,8 +3,8 @@ from PIL import Image, ImageOps
 assignments = [
     ('ai', '#F4BBC3'),
     ('black', '#C0C0C0'),
-    ('love', '#00FFFF'),
-    ('pii', '#FFFF00'),
+    ('love', '#40FFFF'),
+    ('pii', '#FFFF40'),
     ('bro', '#FF4040')
 ]
 

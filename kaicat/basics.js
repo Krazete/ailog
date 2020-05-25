@@ -11,35 +11,35 @@ var log = {
                                     "MBCR1RiDw0E": 0b10110,
                                         "cXzGINQASog": 0b01000,
     "osJsxF-NzyU": 0b00000,
-        "0TSburlzQzw": 0b00000,
-            "A7AYkb-2pJA": 0b00000,
-                "5fMa5kaLl78": 0b00000,
-                    "bT5tLvs8MQk": 0b00000,
-                        "Pa6m6h4dplc": 0b00000,
-                            "9rm2x8_m-oo": 0b00000,
-                                "TOuSoFqGkwQ": 0b00000,
-                                    "Io_GOr3YAN0": 0b00000,
+        "0TSburlzQzw": 0b10000,
+            "A7AYkb-2pJA": 0b10110,
+                "5fMa5kaLl78": 0b10110,
+                    "bT5tLvs8MQk": 0b00110,
+                        "Pa6m6h4dplc": 0b10000,
+                            "9rm2x8_m-oo": 0b10000,
+                                "TOuSoFqGkwQ": 0b10000,
+                                    "Io_GOr3YAN0": 0b10000,
                                         "IPN67RJBewc": 0b00000,
-    "13sla41PtUA": 0b00000,
-        "Awypl55buKM": 0b00000,
-            "seJ5K6RwDsw": 0b00000,
-                "pP82OuGHiKQ": 0b00000,
-                    "WhWXPoa9_k0": 0b00000,
-                        "YQUdLOyewCM": 0b00000,
-                            "Fn36cdRYBSI": 0b00000,
-                                "7jzva_XpJpI": 0b00000,
-                                    "OsbUhM1vTO8": 0b00000,
-                                        "gbaokVeKiNQ": 0b00000,
-    "A1q9mXiEbP8": 0b00000,
-        "OcvAhLKjEWc": 0b00000,
-            "UpgSssXm7gQ": 0b00000,
-                "3O9WJayYOTA": 0b00000,
-                    "WTZW7RgHOa0": 0b00000,
-                        "ahw_qPxuJTI": 0b00000,
-                            "vOJj4GtzKjU": 0b00000,
-                                "pT46FDn9OKk": 0b00000,
-                                    "WgprP7CiZDo": 0b00000,
-                                        "SqHxANMf0ug": 0b00000,
+    "13sla41PtUA": 0b10000,
+        "Awypl55buKM": 0b10000,
+            "seJ5K6RwDsw": 0b00110,
+                "pP82OuGHiKQ": 0b10110,
+                    "WhWXPoa9_k0": 0b10000,
+                        "YQUdLOyewCM": 0b10110,
+                            "Fn36cdRYBSI": 0b10110,
+                                "7jzva_XpJpI": 0b10110,
+                                    "OsbUhM1vTO8": 0b10110,
+                                        "gbaokVeKiNQ": 0b10000,
+    "A1q9mXiEbP8": 0b10000,
+        "OcvAhLKjEWc": 0b10000,
+            "UpgSssXm7gQ": 0b10000,
+                "3O9WJayYOTA": 0b01000,
+                    "WTZW7RgHOa0": 0b00100,
+                        "ahw_qPxuJTI": 0b10000,
+                            "vOJj4GtzKjU": 0b10000,
+                                "pT46FDn9OKk": 0b10110,
+                                    "WgprP7CiZDo": 0b10000,
+                                        "SqHxANMf0ug": 0b00110,
     "2qX7A7zELLY": 0b00000,
         "uvs0kRjsn18": 0b00000,
             "6aY1Vridy2I": 0b00000,
@@ -462,37 +462,37 @@ var log = {
                                     "9LiqSTVnkDU": 0b00000,
                                         "Z27HoSoMeAY": 0b00000,
     /* A.I.Channel China */
-    "FUkA9Ieth9E": 0b00000,
-        "7uKQAWntH2U": 0b00000,
-            "SFXEP2CZbI4": 0b00000,
-                "kyVAU8mCLvs": 0b00000,
-                    "RH4m8Dhah4g": 0b00000,
-                        "OE_2Gk4Lt9c": 0b00000,
-                            "KPaukBhcZZI": 0b00000,
-                                "RvvFG8WBwZU": 0b00000,
-                                    "O4m_5xzW0ns": 0b00000,
-                                        "PIvy2vl5Ssk": 0b00000,
-    "GqsWuvz5ljM": 0b00000,
-        "FaZFxLVHiuw": 0b00000,
-            "QiNKbY-ROzc": 0b00000,
-                "F0S-PYVTj74": 0b00000,
-                    "L4Xqt4pjq9w": 0b00000,
-                        "as55ax3jyo4": 0b00000,
-                            "YV0aNJwdPnw": 0b00000,
-                                "qNV_bsFz8_0": 0b00000,
-                                    "yHPejeujAKk": 0b00000,
-                                        "qU0nKOrjRkk": 0b00000,
-    "4JLrO0M05P8": 0b00000,
-        "wdbMQ3XpXFI": 0b00000,
-            "pNzTV9Wc8c4": 0b00000,
-                "JwR8gPxN64s": 0b00000,
-                    "ZQ7knp1TMlI": 0b00000,
-                        "-cIU1zWhzZY": 0b00000,
-                            "wQAQBwKUozc": 0b00000,
-                                "P_dc3zOe6EE": 0b00000
+    "FUkA9Ieth9E": 0b00001,
+        "7uKQAWntH2U": 0b00001,
+            "SFXEP2CZbI4": 0b00001,
+                "kyVAU8mCLvs": 0b00001,
+                    "RH4m8Dhah4g": 0b00001,
+                        "OE_2Gk4Lt9c": 0b00001,
+                            "KPaukBhcZZI": 0b00001,
+                                "RvvFG8WBwZU": 0b00001,
+                                    "O4m_5xzW0ns": 0b00001,
+                                        "PIvy2vl5Ssk": 0b00001,
+    "GqsWuvz5ljM": 0b00001,
+        "FaZFxLVHiuw": 0b00001,
+            "QiNKbY-ROzc": 0b00001,
+                "F0S-PYVTj74": 0b00001,
+                    "L4Xqt4pjq9w": 0b00001,
+                        "as55ax3jyo4": 0b00001,
+                            "YV0aNJwdPnw": 0b00001,
+                                "qNV_bsFz8_0": 0b00001,
+                                    "yHPejeujAKk": 0b00001,
+                                        "qU0nKOrjRkk": 0b00001,
+    "4JLrO0M05P8": 0b00001,
+        "wdbMQ3XpXFI": 0b00001,
+            "pNzTV9Wc8c4": 0b00001,
+                "JwR8gPxN64s": 0b00001,
+                    "ZQ7knp1TMlI": 0b00001,
+                        "-cIU1zWhzZY": 0b00001,
+                            "wQAQBwKUozc": 0b00001,
+                                "P_dc3zOe6EE": 0b00001
 };
 
-function parseRatingGradient(rating) {
+function parseRatingBar(rating) {
 	return "linear-gradient(to right, #3ea6ff " + rating + "%, #606060 " + rating + "%)";
 }
 
@@ -527,23 +527,23 @@ function newUnit(id, title, thumbnail, timestamp, duration, rating, views) {
 
 	var colors = [];
 	if (log[id] & 0b10000) {
-		colors.push("#F4BBC3")
+		colors.push("var(--ai)")
 		unit.classList.add("ai");
 	}
 	if (log[id] & 0b01000) {
-		colors.push("#404040")
+		colors.push("var(--black)")
 		unit.classList.add("black");
 	}
 	if (log[id] & 0b00100) {
-		colors.push("#00FFFF")
+		colors.push("var(--love)")
 		unit.classList.add("love");
 	}
 	if (log[id] & 0b00010) {
-		colors.push("#FFFF00")
+		colors.push("var(--pii)")
 		unit.classList.add("pii");
 	}
 	if (log[id] & 0b00001) {
-		colors.push("#FF4040")
+		colors.push("var(--bro)")
 		unit.classList.add("bro");
 	}
 	var gradient = colors.length == 1 ? colors[0] : "linear-gradient(90deg, " + colors.join(", ") + ")";
@@ -551,7 +551,7 @@ function newUnit(id, title, thumbnail, timestamp, duration, rating, views) {
 	var sentiment = document.createElement("div");
 	sentiment.className = "sentiment";
 	if (rating) {
-		sentiment.style.backgroundImage = parseRatingGradient(rating);
+		sentiment.style.backgroundImage = parseRatingBar(rating);
 		sentiment.innerHTML = parseRating(rating);
 	}
 	unit.appendChild(sentiment);
