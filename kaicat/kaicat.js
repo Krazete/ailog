@@ -1,7 +1,10 @@
 var apikey = "AIzaSyDWrtvEz9kusT5RCSEhrqcx2SBdUtw1cVY";
 
 function onerror(error) {
-	console.error(error.stack ? error.stack : error.message);
+	console.error(error);
+	if (error.status == 403) {
+		location = "static.html";		
+	}
 }
 
 function loadClient() {
@@ -58,7 +61,6 @@ function loadStatistics(videoIds) {
 				) + " views";
 			}
 		}
-		console.log(response);
 	}
 
 	return gapi.client.youtube.videos.list(params).then(onload, onerror);
@@ -86,7 +88,6 @@ function loadPlaylist(channel, pageToken) {
 	}
 
 	function onload(response) {
-		console.log(response);
 		var broken = false;
 		var videoIds = [];
 
@@ -154,7 +155,9 @@ function loadPlaylist(channel, pageToken) {
 			videoIds.push(item.snippet.resourceId.videoId);
 		}
 
-		loadStatistics(videoIds);
+		if (videoIds.length > 0) {
+			loadStatistics(videoIds);
+		}
 
 		if (!broken && "nextPageToken" in response.result) {
 			// loadPlaylist(channel, response.result.nextPageToken);
