@@ -99,12 +99,12 @@ function loadPlaylist(channel, pageToken) {
 		var videoIds = [];
 
 		for (var item of response.result.items.sort(byTime)) {
-			var published = item.snippet.publishedAt;
-			var timestamp = new Date(published);
-			if (timestamp > new Date("2020-05-09T15:00:00Z")) { /* Board Game Arena: Love Letter */
+			var timestamp = item.snippet.publishedAt;
+			var ts = new Date(timestamp);
+			if (ts > new Date("2020-05-09T15:00:00Z")) { /* Board Game Arena: Love Letter */
 				continue;
 			}
-			else if (timestamp < new Date("2019-05-24T15:00:00Z")) { /* Kizuna AI's Every Day #1 */
+			else if (ts < new Date("2019-05-24T15:00:00Z")) { /* Kizuna AI's Every Day #1 */
 				broken = true;
 				break;
 			}
@@ -120,12 +120,12 @@ function loadPlaylist(channel, pageToken) {
 				"https://i.ytimg.com/"
 			);
 
-			container.appendChild(newUnit(id, title, thumbnail, published));
+			container.appendChild(newUnit(id, title, thumbnail, timestamp));
 
 			channels[channel].videos[id] = {
 				"title": title,
 				"thumbnail": thumbnail,
-				"timestamp": published
+				"timestamp": timestamp
 			};
 
 			videoIds.push(id);
@@ -147,16 +147,8 @@ function loadPlaylist(channel, pageToken) {
 	return gapi.client.youtube.playlistItems.list(params).then(onload, onerror);
 }
 
-function queueNextPage() {
-	if (channels[currentChannel].nextPageToken && innerHeight + scrollY >= document.documentElement.offsetHeight) {
-		loadPlaylist(currentChannel, channels[currentChannel].nextPageToken);
-		channels[currentChannel].nextPageToken = undefined;
-	}
-	requestAnimationFrame(queueNextPage);
-}
-
-function init() {
-	var radios = document.querySelectorAll("input[name='channel']");
+function initOptions() {
+	var options = document.querySelectorAll("input[name='channel']");
 
 	function selectChannel(e) {
 		for (var channel in channels) {
@@ -174,16 +166,26 @@ function init() {
 		currentChannel = this.value;
 	}
 
+	function queueNextPage() {
+		if (channels[currentChannel].nextPageToken && innerHeight + scrollY >= document.documentElement.offsetHeight) {
+			loadPlaylist(currentChannel, channels[currentChannel].nextPageToken);
+			channels[currentChannel].nextPageToken = undefined;
+		}
+		requestAnimationFrame(queueNextPage);
+	}
+
+	for (var option of options) {
+		option.addEventListener("input", selectChannel);
+		if (option.value == "aichannel") {
+			option.click();
+		}
+		queueNextPage();
+	}
+}
+
+function init() {
 	function callback() {
-		loadClient().then(function () {
-			for (var radio of radios) {
-				radio.addEventListener("input", selectChannel);
-				if (radio.value == "aichannel") {
-					radio.click();
-				}
-				queueNextPage();
-			}
-		});
+		loadClient().then(initOptions);
 	}
 
 	gapi.load("client", callback);
