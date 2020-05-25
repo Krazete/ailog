@@ -50,7 +50,7 @@ var log = {
                                 "M7Gb5YyNi3g": 0b00000,
                                     "VvBDgUXPPYU": 0b00000,
                                         "1UimWUwEufI": 0b00000,
-    "aVd_rs2VcRc": 0b00000,
+    "aVd_rs2VcRc": 0b11110,
         "uZg0leem_0U": 0b00000,
             "e0eDrSQh3o4": 0b00000,
                 "uDQHkrnxHc0": 0b00000,
@@ -467,7 +467,7 @@ var log = {
             "SFXEP2CZbI4": 0b00001,
                 "kyVAU8mCLvs": 0b00001,
                     "RH4m8Dhah4g": 0b00001,
-                        "OE_2Gk4Lt9c": 0b00001,
+                        "OE_2Gk4Lt9c": 0b10001,
                             "KPaukBhcZZI": 0b00001,
                                 "RvvFG8WBwZU": 0b00001,
                                     "O4m_5xzW0ns": 0b00001,
@@ -475,10 +475,10 @@ var log = {
     "GqsWuvz5ljM": 0b00001,
         "FaZFxLVHiuw": 0b00001,
             "QiNKbY-ROzc": 0b00001,
-                "F0S-PYVTj74": 0b00001,
+                "F0S-PYVTj74": 0b10001,
                     "L4Xqt4pjq9w": 0b00001,
                         "as55ax3jyo4": 0b00001,
-                            "YV0aNJwdPnw": 0b00001,
+                            "YV0aNJwdPnw": 0b10111,
                                 "qNV_bsFz8_0": 0b00001,
                                     "yHPejeujAKk": 0b00001,
                                         "qU0nKOrjRkk": 0b00001,
@@ -489,7 +489,7 @@ var log = {
                     "ZQ7knp1TMlI": 0b00001,
                         "-cIU1zWhzZY": 0b00001,
                             "wQAQBwKUozc": 0b00001,
-                                "P_dc3zOe6EE": 0b00001
+                                "P_dc3zOe6EE": 0b10001
 };
 
 function parseRatingBar(rating) {
@@ -527,23 +527,23 @@ function newUnit(id, title, thumbnail, timestamp, duration, rating, views) {
 
 	var colors = [];
 	if (log[id] & 0b10000) {
-		colors.push("var(--ai)")
+		colors.push("var(--ai)");
 		unit.classList.add("ai");
 	}
 	if (log[id] & 0b01000) {
-		colors.push("var(--black)")
+		colors.push("var(--black)");
 		unit.classList.add("black");
 	}
 	if (log[id] & 0b00100) {
-		colors.push("var(--love)")
+		colors.push("var(--love)");
 		unit.classList.add("love");
 	}
 	if (log[id] & 0b00010) {
-		colors.push("var(--pii)")
+		colors.push("var(--pii)");
 		unit.classList.add("pii");
 	}
 	if (log[id] & 0b00001) {
-		colors.push("var(--bro)")
+		colors.push("var(--bro)");
 		unit.classList.add("bro");
 	}
 	var gradient = colors.length == 1 ? colors[0] : "linear-gradient(90deg, " + colors.join(", ") + ")";
