@@ -5,7 +5,46 @@ body {
 	margin: 0;
 }
 
-#aichannel, #aigames {
+#options {
+	font-size: 24px;
+	display: flex;
+}
+
+#options input {
+	display: none;
+}
+
+#options label {
+	text-align: center;
+	flex: 1;
+	padding-top: 4px;
+	border-radius: 4px 4px 0 0;
+	margin-top: auto;
+	cursor: pointer;
+}
+#options input#optchannel + label {
+	color: pink;
+}
+#options input#optgames + label {
+	color: cyan;
+}
+#options input#optchina + label {
+	color: red;
+}
+#options input#optchannel:checked + label {
+	background: pink;
+	color: black;
+}
+#options input#optgames:checked + label {
+	background: cyan;
+	color: black;
+}
+#options input#optchina:checked + label {
+	background: red;
+	color: black;
+}
+
+.units {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 	border: 4px solid;
@@ -18,10 +57,35 @@ body {
 	color: cyan;
 	border-color: cyan;
 }
+#aichina {
+	color: red;
+	border-color: red;
+}
 
-h1 {
-	grid-column: 1 / -1;
-	text-align: center;
+.units:after {
+    content: '';
+    background-color: #cccccc;
+    background-image: url('https://i.ytimg.com/');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 100px;
+    padding: 4px;
+    border-radius: 4px;
+    margin: 4px;
+    animation: oscillate 1s linear infinite alternate;
+}
+.units.complete:after {
+	display: none;
+}
+
+@keyframes oscillate {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 .unit {
@@ -51,7 +115,7 @@ h1 {
 
 .thumb:after {
 	content: attr(data-duration);
-	background: #00000080;
+	background-color: #00000080;
 	color: white;
 	font-size: 12px;
 	position: absolute;
@@ -123,4 +187,8 @@ h1 {
 	font-size: 12px;
 	position: relative;
 	float: right;
+}
+
+.hidden {
+	display: none;
 }

@@ -1,4 +1,22 @@
 var apikey = "AIzaSyDWrtvEz9kusT5RCSEhrqcx2SBdUtw1cVY";
+var currentChannel;
+var channels = {
+	"aichannel": {
+		"initialized": false,
+		"nextPageToken": undefined,
+		"videos": {}
+	},
+	"aigames": {
+		"initialized": false,
+		"nextPageToken": undefined,
+		"videos": {}
+	},
+	"aichina": {
+		"initialized": false,
+		"nextPageToken": undefined,
+		"videos": {}
+	}
+};
 
 function onerror(error) {
 	console.error(error);
@@ -18,18 +36,7 @@ function loadClient() {
 	return gapi.client.load(rest).then(onload, onerror);
 }
 
-function parseDuration(duration) {
-	var hMatch = duration.match(/(\d+)H/);
-	var mMatch = duration.match(/(\d+)M/);
-	var sMatch = duration.match(/(\d+)S/);
-	var h = hMatch ? parseInt(hMatch[1]) : 0;
-	var m = mMatch ? parseInt(mMatch[1]) : 0;
-	var s = sMatch ? parseInt(sMatch[1]) : 0;
-
-	return (h ? h + ":" + m.toString().padStart(2, "0") : m) + ":" + s.toString().padStart(2, "0");
-}
-
-function loadStatistics(videoIds) {
+function loadStatistics(channel, videoIds) {
 	var params = {
 		"part": ["statistics", "contentDetails"],
 		"id": videoIds
@@ -39,26 +46,25 @@ function loadStatistics(videoIds) {
 		for (var item of response.result.items) {
 			var unit = document.getElementById(item.id);
 			if (unit) {
-				var duration = parseDuration(item.contentDetails.duration);
+				var duration = item.contentDetails.duration;
 				var views = parseInt(item.statistics.viewCount);
 				var likes = parseInt(item.statistics.likeCount);
 				var dislikes = parseInt(item.statistics.dislikeCount);
-				var rating = parseInt(100 * likes / (likes + dislikes));
+				var rating = 100 * likes / (likes + dislikes);
 
 				var thumb = unit.getElementsByClassName("thumb")[0];
-				thumb.dataset.duration = duration;
+				thumb.dataset.duration = parseDuration(duration);
 
 				var sentiment = unit.getElementsByClassName("sentiment")[0];
-				sentiment.style.backgroundImage = "linear-gradient(to right, #3ea6ff " + rating + "%, #606060 " + rating + "%)";
-				sentiment.innerHTML = Math.floor(rating) + "%";
+				sentiment.style.backgroundImage = parseRatingGradient(rating);
+				sentiment.innerHTML = parseRating(rating);
 
 				var viewcount = unit.getElementsByClassName("viewcount")[0];
-				viewcount.innerHTML = (
-					views > 1e9 ? Math.floor(views / 1e9) + "B" :
-					views > 1e6 ? Math.floor(views / 1e6) + "M" :
-					views > 1e3 ? Math.floor(views / 1e3) + "K" :
-					views
-				) + " views";
+				viewcount.innerHTML = parseViews(views);
+
+				channels[channel].videos[item.id].duration = duration;
+				channels[channel].videos[item.id].views = views;
+				channels[channel].videos[item.id].rating = rating;
 			}
 		}
 	}
@@ -71,14 +77,13 @@ function byTime(a, b) {
 }
 
 function loadPlaylist(channel, pageToken) {
-	var container = document.getElementById(channel);
-
 	var params = {
 		"part": "snippet",
 		"playlistId": (
 			channel == "aichannel" ? "UU4YaOt1yT-ZeyB0OmxHgolA" :
 			channel == "aigames" ? "UUbFwe3COkDrbNsbMyGNCsDg" :
-			"UCArUdy5xj0i0cTuhPHRVMpw"
+			channel == "aichina" ? "UUArUdy5xj0i0cTuhPHRVMpw" :
+			"WL"
 		),
 		"maxResults": 50
 	};
@@ -92,7 +97,8 @@ function loadPlaylist(channel, pageToken) {
 		var videoIds = [];
 
 		for (var item of response.result.items.sort(byTime)) {
-			var timestamp = new Date(item.snippet.publishedAt);
+			var published = item.snippet.publishedAt;
+			var timestamp = new Date(published);
 			if (timestamp > new Date("2020-05-09T15:00:00Z")) { /* Board Game Arena: Love Letter */
 				continue;
 			}
@@ -101,24 +107,9 @@ function loadPlaylist(channel, pageToken) {
 				break;
 			}
 
-			var unit = document.createElement("a");
-			unit.id = item.snippet.resourceId.videoId;
-			unit.className = "unit";
-			unit.target = "_blank";
-			unit.href = "https://youtu.be/" + item.snippet.resourceId.videoId;
-			container.appendChild(unit);
-
-			var sentiment = document.createElement("div");
-			sentiment.className = "sentiment";
-			unit.appendChild(sentiment);
-
-			var thumb = document.createElement("div");
-			thumb.className = "thumb";
-			unit.appendChild(thumb);
-
-			var img = new Image();
-			img.alt = item.snippet.title;
-			img.src = (
+			var id = item.snippet.resourceId.videoId;
+			var title = item.snippet.title;
+			var thumbnail = (
 				item.snippet.thumbnails.high ? item.snippet.thumbnails.high.url :
 				item.snippet.thumbnails.medium ? item.snippet.thumbnails.medium.url :
 				item.snippet.thumbnails.default ? item.snippet.thumbnails.default.url :
@@ -126,52 +117,70 @@ function loadPlaylist(channel, pageToken) {
 				item.snippet.thumbnails.maxres ? item.snippet.thumbnails.maxres.url :
 				"https://i.ytimg.com/"
 			);
-			thumb.appendChild(img);
 
-			var attendance = document.createElement("div");
-			attendance.className = "attendance";
-			unit.appendChild(attendance);
+			newUnit(channel, id, title, thumbnail, published);
 
-			for (var member of ["ai", "black", "love", "pii", "bro"]) {
-				var slot = document.createElement("div");
-				slot.className = member;
-				attendance.appendChild(slot);
-			}
+			channels[channel].videos[id] = {
+				"title": title,
+				"thumbnail": thumbnail,
+				"timestamp": published
+			};
 
-			var title = document.createElement("div");
-			title.className = "title";
-			title.innerHTML = item.snippet.title;
-			unit.appendChild(title);
-
-			var viewcount = document.createElement("div");
-			viewcount.className = "viewcount";
-			unit.appendChild(viewcount);
-
-			var date = document.createElement("div");
-			date.className = "date";
-			date.innerHTML = new Date(item.snippet.publishedAt).toLocaleDateString();
-			unit.appendChild(date);
-
-			videoIds.push(item.snippet.resourceId.videoId);
+			videoIds.push(id);
 		}
 
 		if (videoIds.length > 0) {
-			loadStatistics(videoIds);
+			loadStatistics(channel, videoIds);
 		}
 
 		if (!broken && "nextPageToken" in response.result) {
-			// loadPlaylist(channel, response.result.nextPageToken);
+			channels[channel].nextPageToken = response.result.nextPageToken;
+		}
+		else {
+			nextPageToken = undefined;
+			container.classList.add("complete");
 		}
 	}
 
 	return gapi.client.youtube.playlistItems.list(params).then(onload, onerror);
 }
 
+function queueNextPage() {
+	if (channels[currentChannel].nextPageToken && innerHeight + scrollY >= document.documentElement.offsetHeight) {
+		loadPlaylist(currentChannel, channels[currentChannel].nextPageToken);
+		channels[currentChannel].nextPageToken = undefined;
+	}
+	requestAnimationFrame(queueNextPage);
+}
+
 function init() {
+	var radios = document.querySelectorAll("input[name='channel']");
+
+	function selectChannel(e) {
+		for (var channel in channels) {
+			if (this.value == channel) {
+				document.getElementById(channel).classList.remove("hidden");
+			}
+			else {
+				document.getElementById(channel).classList.add("hidden");
+			}
+		}
+		if (channels[this.value].initialized == false) {
+			channels[this.value].initialized = true;
+			loadPlaylist(this.value);
+		}
+		currentChannel = this.value;
+	}
+
 	function callback() {
 		loadClient().then(function () {
-			loadPlaylist("aichannel");
-			// loadPlaylist("aigames");
+			for (var radio of radios) {
+				radio.addEventListener("input", selectChannel);
+				if (radio.value == "aichannel") {
+					radio.click();
+				}
+				queueNextPage();
+			}
 		});
 	}
 

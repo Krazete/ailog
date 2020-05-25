@@ -4,14 +4,20 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
 	<link rel="stylesheet" href="kaicat.css">
 	<script src="https://apis.google.com/js/api.js"></script>
+	<script src="basics.js"></script>
 	<script src="kaicat.js"></script>
 </head>
 <body>
-	<div id="aichannel">
-		<h1>A.I.Channel</h1>
+	<div id="options">
+		<input type="radio" name="channel" id="optchannel" value="aichannel">
+		<label for="optchannel">A.I.Channel</label>
+		<input type="radio" name="channel" id="optgames" value="aigames">
+		<label for="optgames">A.I.Games</label>
+		<input type="radio" name="channel" id="optchina" value="aichina">
+		<label for="optchina">A.I.Channel China</label>
 	</div>
-	<div id="aigames">
-		<h1>A.I.Games</h1>
-	</div>
+	<div class="units" id="aichannel"></div>
+	<div class="units" id="aigames"></div>
+	<div class="units" id="aichina"></div>
 </body>
 </html>
