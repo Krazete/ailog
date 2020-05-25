@@ -56,7 +56,7 @@ function loadStatistics(channel, videoIds) {
 				thumb.dataset.duration = parseDuration(duration);
 
 				var sentiment = unit.getElementsByClassName("sentiment")[0];
-				sentiment.style.backgroundImage = parseRatingGradient(rating);
+				sentiment.style.backgroundImage = parseRatingBar(rating);
 				sentiment.innerHTML = parseRating(rating);
 
 				var viewcount = unit.getElementsByClassName("viewcount")[0];
