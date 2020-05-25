@@ -191,13 +191,13 @@ function init() {
 	gapi.load("client", callback);
 }
 
-function stringifyLoadedData() {
+function generateStaticData() {
 	for (var channel in channels) {
 		if (!channels[channel].initialized || channels[channel].nextPageToken) {
 			console.warn("Data for", channel, "has not been fully loaded.");
 		}
 	}
-	return JSON.stringify(channels);
+	return JSON.stringify([Date.now(), channels]);
 }
 
 window.addEventListener("DOMContentLoaded", init);

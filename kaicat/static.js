@@ -35,7 +35,12 @@ function initOptions(channels) {
     }
 }
 
-function loadChannels(channels) {
+function loadChannels(response) {
+    var capture = document.getElementById("capture");
+    capture.innerHTML = new Date(response[0]).toLocaleString();
+
+    var channels = response[1];
+    
     for (var channel in channels) {
         var container = document.getElementById(channel);
 
