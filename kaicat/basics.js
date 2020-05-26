@@ -595,7 +595,6 @@ function newUnit(id, title, thumbnail, timestamp, duration, rating, views) {
 }
 
 function lazyLoadImages() {
-    var count = 0;
     for (var img of document.images) {
         if (img.dataset.src) {
             var imgRect = img.getBoundingClientRect();
