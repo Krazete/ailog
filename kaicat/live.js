@@ -175,7 +175,8 @@ function initOptions() {
 	for (var option of options) {
 		option.addEventListener("input", selectChannel);
 		if (option.value == "aichannel") {
-			option.click();
+			option.selected = true;
+			option.dispatchEvent(new InputEvent("input"));
 		}
 		queueNextPage();
 	}
