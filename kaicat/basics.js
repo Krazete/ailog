@@ -525,28 +525,21 @@ function newUnit(id, title, thumbnail, timestamp, duration, rating, views) {
 	unit.id = id;
 	unit.className = "unit";
 
-	var colors = [];
 	if (log[id] & 0b10000) {
-		colors.push("var(--ai)");
 		unit.classList.add("ai");
 	}
 	if (log[id] & 0b01000) {
-		colors.push("var(--black)");
 		unit.classList.add("black");
 	}
 	if (log[id] & 0b00100) {
-		colors.push("var(--love)");
 		unit.classList.add("love");
 	}
 	if (log[id] & 0b00010) {
-		colors.push("var(--pii)");
 		unit.classList.add("pii");
 	}
 	if (log[id] & 0b00001) {
-		colors.push("var(--bro)");
 		unit.classList.add("bro");
 	}
-	var gradient = colors.length == 1 ? colors[0] : "linear-gradient(90deg, " + colors.join(", ") + ")";
 
 	var sentiment = document.createElement("div");
 	sentiment.className = "sentiment";
@@ -571,8 +564,7 @@ function newUnit(id, title, thumbnail, timestamp, duration, rating, views) {
 	thumb.appendChild(img);
 
 	var attendance = document.createElement("div");
-	attendance.className = "attendance";
-	attendance.style.background = gradient;
+	attendance.className = "attendance dye";
 	unit.appendChild(attendance);
 
 	for (var member of ["ai", "black", "love", "pii", "bro"]) {
@@ -581,11 +573,10 @@ function newUnit(id, title, thumbnail, timestamp, duration, rating, views) {
 		attendance.appendChild(slot);
 	}
 
-	var ASDASDDtitle = document.createElement("div");
-	ASDASDDtitle.className = "title";
-	ASDASDDtitle.innerHTML = title;
-	ASDASDDtitle.style.background = gradient;
-	unit.appendChild(ASDASDDtitle);
+	var label = document.createElement("div");
+	label.className = "title dye";
+	label.innerHTML = title;
+	unit.appendChild(label);
 
 	var viewcount = document.createElement("div");
 	viewcount.className = "viewcount";
