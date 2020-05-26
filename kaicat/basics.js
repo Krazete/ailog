@@ -560,7 +560,8 @@ function newUnit(id, title, thumbnail, timestamp, duration, rating, views) {
 
 	var img = new Image();
 	img.alt = title;
-	img.src = thumbnail;
+    img.src = "https://i.ytimg.com/";
+    img.dataset.src = thumbnail;
 	thumb.appendChild(img);
 
 	var attendance = document.createElement("div");
@@ -593,10 +594,25 @@ function newUnit(id, title, thumbnail, timestamp, duration, rating, views) {
 	return unit;
 }
 
+function lazyLoadImages() {
+    var count = 0;
+    for (var img of document.images) {
+        if (img.dataset.src) {
+            var imgRect = img.getBoundingClientRect();
+            if (imgRect.bottom > 0 && imgRect.top < innerHeight) {
+                img.src = img.dataset.src;
+                delete img.dataset.src;
+            }
+        }
+    }
+    requestAnimationFrame(lazyLoadImages);
+}
+
 function randomizeFavicon() {
     var favicon = document.querySelector("link[rel='shortcut icon']");
     var r = Math.floor(5 * Math.random());
     favicon.href = "icon/" + ["ai", "black", "love", "pii", "bro"][r] + ".png";
 }
 
+window.addEventListener("DOMContentLoaded", lazyLoadImages);
 window.addEventListener("DOMContentLoaded", randomizeFavicon);
