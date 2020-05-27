@@ -174,7 +174,7 @@ function initOptions() {
 
 	for (var option of options) {
 		option.addEventListener("input", selectChannel);
-		if (option.value == "aichannel") {
+		if (option.checked) {
 			option.checked = false;
 			option.click();
 		}

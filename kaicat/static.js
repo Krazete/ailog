@@ -29,7 +29,8 @@ function initOptions(channels) {
 
     for (var option of options) {
         option.addEventListener("input", selectChannel);
-        if (option.value == "aichannel") {
+        if (option.checked) {
+            option.checked = false;
             option.click();
         }
     }
@@ -40,7 +41,7 @@ function loadChannels(response) {
     capture.innerHTML = new Date(response[0]).toLocaleString();
 
     var channels = response[1];
-    
+
     for (var channel in channels) {
         var container = document.getElementById(channel);
 
