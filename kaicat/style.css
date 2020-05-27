@@ -1,6 +1,6 @@
 :root {
 	--ai: #F4BBC3;
-	--black: #404040;
+	--black: #606060;
 	--love: #40FFFF;
 	--pii: #FFFF40;
 	--bro: #FF4040;
@@ -132,38 +132,38 @@ body {
 	padding: 2px 4px;
 }
 
-.dye {background: #606060;}
+.dye {background: white;}
 .bro .dye {background: var(--bro);}
 .pii .dye {background: var(--pii);}
-.pii.bro .dye {background: linear-gradient(to right, var(--pii), var(--bro));}
+.pii.bro .dye {background: linear-gradient(to right, var(--pii) 25%, var(--bro) 75%);}
 .love .dye {background: var(--love);}
-.love.bro .dye {background: linear-gradient(to right, var(--love), var(--bro));}
-.love.pii .dye {background: linear-gradient(to right, var(--love), var(--pii));}
-.love.pii.bro .dye {background: linear-gradient(to right, var(--love), var(--pii), var(--bro));}
+.love.bro .dye {background: linear-gradient(to right, var(--love) 25%, var(--bro) 75%);}
+.love.pii .dye {background: linear-gradient(to right, var(--love) 25%, var(--pii) 75%);}
+.love.pii.bro .dye {background: linear-gradient(to right, var(--love) 16.7%, var(--pii), var(--bro) 83.3%);}
 .black .dye {background: var(--black);}
-.black.bro .dye {background: linear-gradient(to right, var(--black), var(--bro));}
-.black.pii .dye {background: linear-gradient(to right, var(--black), var(--pii));}
-.black.pii.bro .dye {background: linear-gradient(to right, var(--black), var(--pii), var(--bro));}
-.black.love .dye {background: linear-gradient(to right, var(--black), var(--love));}
-.black.love.bro .dye {background: linear-gradient(to right, var(--black), var(--love), var(--bro));}
-.black.love.pii .dye {background: linear-gradient(to right, var(--black), var(--love), var(--pii));}
-.black.love.pii.bro .dye {background: linear-gradient(to right, var(--black), var(--love), var(--pii), var(--bro));}
+.black.bro .dye {background: linear-gradient(to right, var(--black) 25%, var(--bro) 75%);}
+.black.pii .dye {background: linear-gradient(to right, var(--black) 25%, var(--pii) 75%);}
+.black.pii.bro .dye {background: linear-gradient(to right, var(--black) 16.7%, var(--pii), var(--bro) 83.3%);}
+.black.love .dye {background: linear-gradient(to right, var(--black) 25%, var(--love) 75%);}
+.black.love.bro .dye {background: linear-gradient(to right, var(--black) 16.7%, var(--love), var(--bro) 83.3%);}
+.black.love.pii .dye {background: linear-gradient(to right, var(--black) 16.7%, var(--love), var(--pii) 83.3%);}
+.black.love.pii.bro .dye {background: linear-gradient(to right, var(--black) 12.5%, var(--love), var(--pii), var(--bro) 87.5%);}
 .ai .dye {background: var(--ai);}
-.ai.bro .dye {background: linear-gradient(to right, var(--ai), var(--bro));}
-.ai.pii .dye {background: linear-gradient(to right, var(--ai), var(--pii));}
-.ai.pii.bro .dye {background: linear-gradient(to right, var(--ai), var(--pii), var(--bro));}
-.ai.love .dye {background: linear-gradient(to right, var(--ai), var(--love));}
-.ai.love.bro .dye {background: linear-gradient(to right, var(--ai), var(--love), var(--bro));}
-.ai.love.pii .dye {background: linear-gradient(to right, var(--ai), var(--love), var(--pii));}
-.ai.love.pii.bro .dye {background: linear-gradient(to right, var(--ai), var(--love), var(--pii), var(--bro));}
-.ai.black .dye {background: linear-gradient(to right, var(--ai), var(--black));}
-.ai.black.bro .dye {background: linear-gradient(to right, var(--ai), var(--black), var(--bro));}
-.ai.black.pii .dye {background: linear-gradient(to right, var(--ai), var(--black), var(--pii));}
-.ai.black.pii.bro .dye {background: linear-gradient(to right, var(--ai), var(--black), var(--pii), var(--bro));}
-.ai.black.love .dye {background: linear-gradient(to right, var(--ai), var(--black), var(--love));}
-.ai.black.love.bro .dye {background: linear-gradient(to right, var(--ai), var(--black), var(--love), var(--bro));}
-.ai.black.love.pii .dye {background: linear-gradient(to right, var(--ai), var(--black), var(--love), var(--pii));}
-.ai.black.love.pii.bro .dye {background: linear-gradient(to right, var(--ai), var(--black), var(--love), var(--pii), var(--bro));}
+.ai.bro .dye {background: linear-gradient(to right, var(--ai) 25%, var(--bro) 75%);}
+.ai.pii .dye {background: linear-gradient(to right, var(--ai) 25%, var(--pii) 75%);}
+.ai.pii.bro .dye {background: linear-gradient(to right, var(--ai) 16.7%, var(--pii), var(--bro) 83.3%);}
+.ai.love .dye {background: linear-gradient(to right, var(--ai) 25%, var(--love) 75%);}
+.ai.love.bro .dye {background: linear-gradient(to right, var(--ai) 16.7%, var(--love), var(--bro) 83.3%);}
+.ai.love.pii .dye {background: linear-gradient(to right, var(--ai) 16.7%, var(--love), var(--pii) 83.3%);}
+.ai.love.pii.bro .dye {background: linear-gradient(to right, var(--ai) 12.5%, var(--love), var(--pii), var(--bro) 87.5%);}
+.ai.black .dye {background: linear-gradient(to right, var(--ai) 25%, var(--black) 75%);}
+.ai.black.bro .dye {background: linear-gradient(to right, var(--ai) 16.7%, var(--black), var(--bro) 83.3%);}
+.ai.black.pii .dye {background: linear-gradient(to right, var(--ai) 16.7%, var(--black), var(--pii) 83.3%);}
+.ai.black.pii.bro .dye {background: linear-gradient(to right, var(--ai) 12.5%, var(--black), var(--pii), var(--bro) 87.5%);}
+.ai.black.love .dye {background: linear-gradient(to right, var(--ai) 16.7%, var(--black), var(--love) 83.3%);}
+.ai.black.love.bro .dye {background: linear-gradient(to right, var(--ai) 12.5%, var(--black), var(--love), var(--bro) 87.5%);}
+.ai.black.love.pii .dye {background: linear-gradient(to right, var(--ai) 12.5%, var(--black), var(--love), var(--pii) 87.5%);}
+.ai.black.love.pii.bro .dye {background: linear-gradient(to right, var(--ai) 10%, var(--black), var(--love), var(--pii), var(--bro) 90%);}
 
 .attendance {
 	display: flex;
@@ -180,17 +180,22 @@ body {
 .black .black,
 .love .love,
 .pii .pii,
-.bro .bro {
+.bro .bro,
+.ish {
 	background-color: black;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: auto 100%;
 }
-.ai .ai {background-image: url('icon/ai.png');}
-.black .black {background-image: url('icon/black.png');}
-.love .love {background-image: url('icon/love.png'); background-size: auto 80%;}
-.pii .pii {background-image: url('icon/pii.png'); background-size: auto 80%;}
-.bro .bro {background-image: url('icon/bro.png');}
+.ai .ai, .ai.ish {background-image: url('icon/ai.png');}
+.black .black, .black.ish {background-image: url('icon/black.png');}
+.love .love, .love.ish {background-image: url('icon/love.png'); background-size: auto 80%;}
+.pii .pii, .pii.ish {background-image: url('icon/pii.png'); background-size: auto 80%;}
+.bro .bro, .bro.ish {background-image: url('icon/bro.png');}
+.ish {
+	background-color: initial;
+	filter: brightness(0);
+}
 
 .title {
 	color: black;
