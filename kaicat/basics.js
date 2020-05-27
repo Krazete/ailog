@@ -588,7 +588,7 @@ function newUnit(id, title, thumbnail, timestamp, duration, rating, views) {
 
 	var date = document.createElement("div");
 	date.className = "date";
-	date.innerHTML = new Date(timestamp).toLocaleDateString();
+	date.innerHTML = new Date(new Date(timestamp).getTime() + 32400000).toLocaleDateString();
 	unit.appendChild(date);
 
 	return unit;
