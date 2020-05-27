@@ -49,7 +49,12 @@ function loadChannels(response) {
             container.classList.add("complete");
         }
 
-        for (var id in channels[channel].videos) {
+        var ids = Object.keys(channels[channel].videos);
+        ids.sort(function (a, b) {
+            return new Date(channels[channel].videos[b].timestamp) - new Date(channels[channel].videos[a].timestamp);
+        });
+
+        for (var id of ids) {
             container.appendChild(newUnit(
                 id,
                 channels[channel].videos[id].title,

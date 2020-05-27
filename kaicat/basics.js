@@ -87,11 +87,11 @@ var log = {
                     "-qxnyyQcI1k": 0b00010,
                         "7giIn3nD2J4": 0b00100,
                             "aP0jjmyFT_k": 0b10000,
-                                "nuPZ9kykhd8": 0b00100,
-                                    "sFEX8foiZgQ": 0b10100,
-                                        "IivXuqpE2wM": 0b00010,
-    "wb389a_nGFg": 0b00100, /* ai-chan in flashback */
-        "85Qz1Ueu54U": 0b10000, /* lengthy; might've missed someone */
+                                "wb389a_nGFg": 0b00100, /* ai-chan in flashback */
+                                    "nuPZ9kykhd8": 0b00100, /* lengthy; might've missed someone */
+                                        "85Qz1Ueu54U": 0b10000, /* lengthy; might've missed someone */
+    "sFEX8foiZgQ": 0b10100,
+        "IivXuqpE2wM": 0b00010,
             "WnGghIiOaW0": 0b00100,
                 "sp0n12L3Fo0": 0b00100,
                     "WQ-MErCNOMQ": 0b00010,
@@ -189,8 +189,8 @@ var log = {
                             "tNTZnwtytVc": 0b00110,
                                 "QOcsMwNnlfI": 0b00110,
                                     "yLrstz80MKs": 0b10000,
-                                        "TS5nUE45oQY": 0b00010,
-    "BsLyJ6MTVys": 0b10000,
+                                        "BsLyJ6MTVys": 0b10000,
+    "TS5nUE45oQY": 0b00010,
         "M1nAuPeLZpc": 0b10110, /* model-only */
             "ZzFBRe2X0lI": 0b10000,
                 "F7Im6HaWR4Q": 0b10000,
