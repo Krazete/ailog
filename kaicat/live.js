@@ -165,7 +165,7 @@ function initOptions() {
 	}
 
 	function queueNextPage() {
-		if (channels[currentChannel].nextPageToken && innerHeight + scrollY + 100 >= document.documentElement.offsetHeight) {
+		if (currentChannel && channels[currentChannel].nextPageToken && innerHeight + scrollY + 100 >= document.documentElement.offsetHeight) {
 			loadPlaylist(currentChannel, channels[currentChannel].nextPageToken);
 			channels[currentChannel].nextPageToken = undefined;
 		}
