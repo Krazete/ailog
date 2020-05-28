@@ -12,6 +12,62 @@ body {
 	font-family: 'Roboto', 'Arial', sans-serif;
 }
 
+h1, h2, p, ul {
+	margin: 8px 0;
+}
+
+#version {
+	text-align: right;
+}
+
+.flexbox {
+	display: flex;
+}
+
+.role {
+	max-width: 400px;
+	flex: 1;
+	padding: 4px;
+	border: 4px solid #606060;
+	border-radius: 4px;
+	margin: 4px;
+}
+
+#info {
+	flex: auto;
+}
+
+#filter {
+	flex: none;
+}
+
+#filter input {
+	display: none;
+}
+
+#filai + label {--shadow: var(--ai);}
+#filblack + label {--shadow: #C0C0C0;}
+#fillove + label {--shadow: var(--love);}
+#filpii + label {--shadow: var(--pii);}
+#filbro + label {--shadow: var(--bro);}
+
+#filter img {
+	-webkit-filter: contrast(0);
+	filter: contrast(0);
+	box-shadow: inset 0 0 4px white;
+	width: 40px;
+	display: block;
+	padding: 8px;
+	border-radius: 8px;
+	margin: 4px auto;
+	cursor: pointer;
+}
+#filter input:checked + label img {
+	-webkit-filter: none;
+	filter: none;
+	box-shadow: inset 0 0 4px 4px var(--shadow);
+}
+
 #options {
 	font-size: 24px;
 	display: flex;
@@ -132,7 +188,7 @@ body {
 	padding: 2px 4px;
 }
 
-.dye {background: white;}
+.dye {background: white; color: black;}
 .bro .dye {background: var(--bro);}
 .pii .dye {background: var(--pii);}
 .pii.bro .dye {background: linear-gradient(to right, var(--pii) 25%, var(--bro) 75%);}
@@ -193,12 +249,12 @@ body {
 .pii .pii, .pii.ish {background-image: url('icon/pii.png'); background-size: auto 80%;}
 .bro .bro, .bro.ish {background-image: url('icon/bro.png');}
 .ish {
-	background-color: initial;
+	background-color: transparent !important;
+	-webkit-filter: brightness(0);
 	filter: brightness(0);
 }
 
 .title {
-	color: black;
 	font-size: 14px;
 	line-height: 20px;
 	position: relative;

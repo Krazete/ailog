@@ -9,7 +9,62 @@
 	<script src="live.js"></script>
 </head>
 <body>
-	Because videos are loaded in chunks of 50, some videos may display out of chronological order.
+	<p id="version">This live version of the Attendance Log may display some videos out of chronological order.</p>
+	<div class="flexbox">
+		<div id="info">
+		    <h1>Information</h1>
+		    <p>This website categorizes Kizuna AIs' videos during Love-chan's and AI-pii's tenure as versions of Kizuna AI.</p>
+		    <p>This includes all publicly listed videos posted between the beginning (Kizuna AI's Everyday #1) and the end (the Board Game Arena collab following love-pii's departure).</p>
+		    <div class="flexbox">
+		        <div class="role ai black love pii bro">
+		            <h2>Major Role</h2>
+		            <div class="attendance dye">
+		                <div class="ai"></div>
+		                <div class="black"></div>
+		                <div class="love"></div>
+		                <div class="pii"></div>
+		                <div class="bro"></div>
+		            </div>
+		            <p>A colored symbol on a black background indicates a major role.</p>
+		            <p>An AI has a major role if the following statement is true:</p>
+		            <ul>
+		                <li>The AI is present and has a significant vocal role.</li>
+		            </ul>
+		        </div>
+		        <div class="role ai black love pii bro">
+		            <h2>Minor Role</h2>
+		            <div class="attendance dye">
+		                <div class="ai ish"></div>
+		                <div class="black ish"></div>
+		                <div class="love ish"></div>
+		                <div class="pii ish"></div>
+		                <div class="bro ish"></div>
+		            </div>
+		            <p>A black symbol indicates a minor role.</p>
+		            <p>An AI has a minor role if one of the following is true:</p>
+		            <ul>
+		                <li>The AI is present but has no significant vocal role.</li>
+		                <li>The AI is referenced in a clip of a past video.</li>
+		                <li>The AI is given a significant mention.</li>
+		                <li>The AI is a minor guest in the livestream.</li>
+		            </ul>
+		        </div>
+		    </div>
+		</div>
+		<div id="filter">
+			<h1>Filter</h1>
+			<input type="checkbox" name="filter" id="filai" class="role">
+			<label for="filai"><img src="icon/ai.png"></label>
+			<input type="checkbox" name="filter" id="filblack" class="role">
+			<label for="filblack"><img src="icon/black.png"></label>
+			<input type="checkbox" name="filter" id="fillove" class="role">
+			<label for="fillove"><img src="icon/love.png"></label>
+			<input type="checkbox" name="filter" id="filpii" class="role">
+			<label for="filpii"><img src="icon/pii.png"></label>
+			<input type="checkbox" name="filter" id="filbro" class="role">
+			<label for="filbro"><img src="icon/bro.png"></label>
+		</div>
+	</div>
 	<div id="options">
 		<input type="radio" name="channel" id="optchannel" value="aichannel" checked>
 		<label for="optchannel">A.I.Channel</label>

@@ -492,8 +492,13 @@ var log = {
                                 "P_dc3zOe6EE": 0b0100000001
 };
 
+function darken(hex, rating) {
+    return Math.floor(hex * rating / 100).toString(16).padStart(2, "0");
+}
+
 function parseRatingBar(rating) {
-	return "linear-gradient(to right, #3ea6ff " + rating + "%, #606060 " + rating + "%)";
+    var blue = "#3e" + darken(0xa6, rating) + darken(0xff, rating);
+	return "linear-gradient(to right, " + blue + " " + rating + "%, #606060 " + rating + "%)";
 }
 
 function parseRating(rating) {
@@ -602,24 +607,35 @@ function newUnit(id, title, thumbnail, timestamp, duration, rating, views) {
 	return unit;
 }
 
-function lazyLoadImages() {
-    for (var img of document.images) {
-        if (img.dataset.src) {
-            var imgRect = img.getBoundingClientRect();
-            if (imgRect.bottom > 0 && imgRect.top < innerHeight) {
-                img.src = img.dataset.src;
-                delete img.dataset.src;
+function initBasics() {
+    var filters = document.getElementById("filter").getEle;
+
+    function randomizeFavicon() {
+        var favicon = document.querySelector("link[rel='shortcut icon']");
+        var r = Math.floor(5 * Math.random());
+        favicon.href = "icon/" + ["ai", "black", "love", "pii", "bro"][r] + ".png";
+    }
+
+    function lazyLoadImages() {
+        for (var img of document.images) {
+            if (img.dataset.src) {
+                var imgRect = img.getBoundingClientRect();
+                if (imgRect.bottom > 0 && imgRect.top < innerHeight) {
+                    img.src = img.dataset.src;
+                    delete img.dataset.src;
+                }
             }
         }
+        requestAnimationFrame(lazyLoadImages);
     }
-    requestAnimationFrame(lazyLoadImages);
+
+    function onClickFilter(e) {
+    }
+
+    randomizeFavicon();
+    lazyLoadImages();
+
+    filter.addEventListener("click", onClickFilter);
 }
 
-function randomizeFavicon() {
-    var favicon = document.querySelector("link[rel='shortcut icon']");
-    var r = Math.floor(5 * Math.random());
-    favicon.href = "icon/" + ["ai", "black", "love", "pii", "bro"][r] + ".png";
-}
-
-window.addEventListener("DOMContentLoaded", lazyLoadImages);
-window.addEventListener("DOMContentLoaded", randomizeFavicon);
+window.addEventListener("DOMContentLoaded", initBasics);
