@@ -615,7 +615,13 @@ function newUnit(id, title, thumbnail, timestamp, duration, rating, views) {
 }
 
 function initBasics() {
-    var filters = document.getElementById("filter").getEle;
+    var filcss = document.getElementById("filcss");
+    var filter = document.getElementById("filter");
+    var filai = document.getElementById("filai");
+    var filblack = document.getElementById("filblack");
+    var fillove = document.getElementById("fillove");
+    var filpii = document.getElementById("filpii");
+    var filbro = document.getElementById("filbro");
 
     function randomizeFavicon() {
         var favicon = document.querySelector("link[rel='shortcut icon']");
@@ -636,13 +642,50 @@ function initBasics() {
         requestAnimationFrame(lazyLoadImages);
     }
 
+    function combos(x, selection, i) {
+        var y = [];
+        for (var xi of x) {
+            y.push(xi + "." + selection[i]);
+            y.push(xi + "." + selection[i] + "ish");
+        }
+        if (++i < selection.length) {
+            return combos(y, selection, i);
+        }
+        return y;
+    }
+
     function onClickFilter(e) {
+        if (!filai.checked && !filblack.checked && !fillove.checked && !filpii.checked && !filbro.checked) {
+            filcss.innerHTML = "";
+        }
+        else {
+            var selection = [];
+            if (filai.checked) {
+                selection.push("ai");
+            }
+            if (filblack.checked) {
+                selection.push("black");
+            }
+            if (fillove.checked) {
+                selection.push("love");
+            }
+            if (filpii.checked) {
+                selection.push("pii");
+            }
+            if (filbro.checked) {
+                selection.push("bro");
+            }
+            var selectors = combos([".unit"], selection, 0);
+            console.log(selectors);
+            filcss.innerHTML = ".unit {opacity: 0.25;} " + selectors.join(", ") + " {opacity: 1;}";
+        }
     }
 
     randomizeFavicon();
     lazyLoadImages();
 
     filter.addEventListener("click", onClickFilter);
+    filter.click();
 }
 
 window.addEventListener("DOMContentLoaded", initBasics);
