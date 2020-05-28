@@ -23,6 +23,8 @@ Both versions lazy load all thumbnails for efficiency and faster initialization.
 
 ## Notes
 
+### Logging
+
 I reviewed and marked all 488 videos myself.
 While I did thoroughly check each video, I may have missed some entries.
 
@@ -34,6 +36,8 @@ If I did miss anything, please let me know.
 * Gmail: krazete@gmail.com
 * Discord: Krazete#7038
 * Reddit: u/krazete
+
+### A.I.Channel China
 
 I realize A.I.Channel China's videos were uploaded on Bilibili much earlier than their YouTube publish date.
 This means AI-bro's content is not truly in chronological order.
