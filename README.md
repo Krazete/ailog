@@ -33,31 +33,6 @@ There are two versions of the attendance log.
 
 Both versions lazy load all thumbnails for efficiency and faster initialization.
 
-## Motivation
-
-This project was made mostly in response to the common misinformed claim that the original has been replaced or was being forced out by upd8.
-This was never the case.
-
-AI-chan said during AI Party 2019 that [she never planned on leaving](https://warosu.org/jp/thread/21612492#p21615639).
-A month later, AI-pii [addressed the growing concerns in her livestream](https://youtu.be/IwIoDYymgVs?t=61) saying AI-chan wasn't leaving, and she'd bring her back if she did.
-
-During Love-chan's and AI-pii's existence as Kizuna AIs, AI-chan:
-
-* released the song [Sky High](https://youtu.be/yLrstz80MKs) ([whose lyrics can't contain a secret message from her since she didn't write it](https://youtu.be/vk3tY4hwr3M?t=546)),
-* performed at [Summer Sonic](https://youtu.be/O57ueFS0M6o), [DIVE XR](https://twitter.com/aichan_nel/status/1175769837622030337), [J-WAVE](https://twitter.com/aichan_nel/status/1173189719578042369), [Bilibili Macro Link VR](https://twitter.com/aichan_nel/status/1152094751849504770), and [Momoiku](https://youtu.be/-sv3WxrunOw)
-* cohosted the television program [てえてえTV](https://cu.ntv.co.jp/program/tetete2/) alongside fellow upd8 members the Omega Sisters
-
-Meanwhile, her voice model Kasuga Nozomi took on some voice acting roles:
-
-* Granbelm (as Mimi Rin)
-* Infinite Dendrogram (as the interface AI)
-* Shirobako Movie (as a virtual idol) *(I haven't seen it, I'm just taking Discord user Guest#3616's word for it.)*
-
-In short, she wasn't replaced.
-She was busy.
-
-Hopefully this project helps to clarify the fact that AI-chan never left.
-
 ## Additional Notes
 
 ### Logging
@@ -82,3 +57,28 @@ More importantly, it means some later videos which should be included are not di
 
 Due to the rarity of collaborations on A.I.Channel China, this error is a minor one.
 Thus, I did not make any attempt to fix the issue.
+
+### Motivation
+
+This project was made mostly in response to the common misinformed claim that the original has been replaced or was being forced out by upd8.
+This was never the case.
+
+AI-chan said during AI Party 2019 that [she never planned on leaving](https://warosu.org/jp/thread/21612492#p21615639).
+A month later, AI-pii [addressed the growing concerns in her livestream](https://youtu.be/IwIoDYymgVs?t=61) saying AI-chan wasn't leaving, and she'd bring her back if she did.
+
+During Love-chan's and AI-pii's existence as Kizuna AIs, AI-chan:
+
+* released the song [Sky High](https://youtu.be/yLrstz80MKs) ([whose lyrics can't contain a secret message from her since she didn't write it](https://youtu.be/vk3tY4hwr3M?t=546)),
+* performed at [Summer Sonic](https://youtu.be/O57ueFS0M6o), [DIVE XR](https://twitter.com/aichan_nel/status/1175769837622030337), [J-WAVE](https://twitter.com/aichan_nel/status/1173189719578042369), [Bilibili Macro Link VR](https://twitter.com/aichan_nel/status/1152094751849504770), and [Momoiku](https://youtu.be/-sv3WxrunOw)
+* cohosted the television program [てえてえTV](https://cu.ntv.co.jp/program/tetete2/) alongside fellow upd8 members the Omega Sisters
+
+Meanwhile, her voice model Kasuga Nozomi took on some voice acting roles:
+
+* Granbelm (as Mimi Rin)
+* Infinite Dendrogram (as the interface AI)
+* Shirobako Movie (as a virtual idol) *(I haven't seen it, I'm just taking Discord user Guest#3616's word for it.)*
+
+In short, she wasn't replaced.
+She was busy.
+
+Hopefully this project helps to clarify the fact that AI-chan never left.
