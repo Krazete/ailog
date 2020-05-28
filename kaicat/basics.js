@@ -530,19 +530,34 @@ function newUnit(id, title, thumbnail, timestamp, duration, rating, views) {
 	unit.id = id;
 	unit.className = "unit";
 
+    if (log[id] & 0b1000000000) {
+		unit.classList.add("aiish");
+	}
     if (log[id] & 0b0100000000) {
 		unit.classList.add("ai");
 	}
-	if (log[id] & 0b0001000000) {
+	if (log[id] & 0b0010000000) {
+		unit.classList.add("blackish");
+	}
+    if (log[id] & 0b0001000000) {
 		unit.classList.add("black");
 	}
-	if (log[id] & 0b0000010000) {
+	if (log[id] & 0b0000100000) {
+		unit.classList.add("loveish");
+	}
+    if (log[id] & 0b0000010000) {
 		unit.classList.add("love");
 	}
-	if (log[id] & 0b0000000100) {
+	if (log[id] & 0b0000001000) {
+		unit.classList.add("piiish");
+	}
+    if (log[id] & 0b0000000100) {
 		unit.classList.add("pii");
 	}
-	if (log[id] & 0b0000000001) {
+	if (log[id] & 0b0000000010) {
+		unit.classList.add("broish");
+	}
+    if (log[id] & 0b0000000001) {
 		unit.classList.add("bro");
 	}
 
@@ -576,14 +591,6 @@ function newUnit(id, title, thumbnail, timestamp, duration, rating, views) {
 	for (var member of ["ai", "black", "love", "pii", "bro"]) {
 		var slot = document.createElement("div");
 		slot.className = member;
-        if (log[id] & 0b1000000000 && member == "ai" ||
-            log[id] & 0b0010000000 && member == "black" ||
-            log[id] & 0b0000100000 && member == "love" ||
-            log[id] & 0b0000001000 && member == "pii" ||
-            log[id] & 0b0000000010 && member == "bro"
-        ) {
-            slot.classList.add("ish");
-        }
 		attendance.appendChild(slot);
 	}
 

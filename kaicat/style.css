@@ -12,12 +12,16 @@ body {
 	font-family: 'Roboto', 'Arial', sans-serif;
 }
 
-h1, h2, p, ul {
+h1 {
+	text-align: center;
+}
+h1, h2, h3, p, ul {
 	margin: 8px 0;
 }
 
 #version {
-	text-align: right;
+	color: gray;
+	font-size: 12px;
 }
 
 .flexbox {
@@ -236,23 +240,29 @@ h1, h2, p, ul {
 .black .black,
 .love .love,
 .pii .pii,
-.bro .bro,
-.ish {
+.bro .bro {
 	background-color: black;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: auto 100%;
 }
-.ai .ai, .ai.ish {background-image: url('icon/ai.png');}
-.black .black, .black.ish {background-image: url('icon/black.png');}
-.love .love, .love.ish {background-image: url('icon/love.png'); background-size: auto 80%;}
-.pii .pii, .pii.ish {background-image: url('icon/pii.png'); background-size: auto 80%;}
-.bro .bro, .bro.ish {background-image: url('icon/bro.png');}
-.ish {
-	background-color: transparent !important;
+.aiish .ai,
+.blackish .black,
+.loveish .love,
+.piiish .pii,
+.broish .bro {
 	-webkit-filter: brightness(0);
 	filter: brightness(0);
+	background-color: transparent;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
 }
+.ai .ai, .aiish .ai {background-image: url('icon/ai.png');}
+.black .black, .blackish .black {background-image: url('icon/black.png');}
+.love .love, .loveish .love {background-image: url('icon/love.png'); background-size: auto 80%;}
+.pii .pii, .piiish .pii {background-image: url('icon/pii.png'); background-size: auto 80%;}
+.bro .bro, .broish .bro {background-image: url('icon/bro.png');}
 
 .title {
 	font-size: 14px;
