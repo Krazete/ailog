@@ -684,7 +684,7 @@ function initBasics() {
     lazyLoadImages();
 
     filter.addEventListener("click", onClickFilter);
-    filter.click();
+    window.addEventListener("load", onClickFilter);
 }
 
 window.addEventListener("DOMContentLoaded", initBasics);
