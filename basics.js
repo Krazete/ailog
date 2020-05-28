@@ -1,8 +1,8 @@
 var log = {
     /* A.I.Channel */
     "KKjJyNB0vkA": 0b0100010100,
-        "AmLFSguxTRY": 0b0100010110, /* ai-bro is mentioned */
-            "ngGbru6_MVQ": 0b1001000000, /* ai-chan in past video */
+        "AmLFSguxTRY": 0b0100010110,
+            "ngGbru6_MVQ": 0b1001000000,
                 "nWquN1L5aQc": 0b0100000000,
                     "U0PL7g7BTyw": 0b0100000000,
                         "zBlOCX66uc8": 0b0100000000,
@@ -29,7 +29,7 @@ var log = {
                             "Fn36cdRYBSI": 0b0100010100,
                                 "7jzva_XpJpI": 0b0100010100,
                                     "OsbUhM1vTO8": 0b0100010100,
-                                        "gbaokVeKiNQ": 0b0110000000, /* black ai is drawn */
+                                        "gbaokVeKiNQ": 0b0110000000,
     "A1q9mXiEbP8": 0b0100000000,
         "OcvAhLKjEWc": 0b0100000000,
             "UpgSssXm7gQ": 0b0100010100,
@@ -50,7 +50,7 @@ var log = {
                                 "M7Gb5YyNi3g": 0b0000010000,
                                     "VvBDgUXPPYU": 0b0100010100,
                                         "1UimWUwEufI": 0b0000010000,
-    "aVd_rs2VcRc": 0b1001101000, /* model only */
+    "aVd_rs2VcRc": 0b1001101000,
         "uZg0leem_0U": 0b0000010100,
             "e0eDrSQh3o4": 0b0100000000,
                 "uDQHkrnxHc0": 0b0100000000,
@@ -58,7 +58,7 @@ var log = {
                         "y2afn21gqe0": 0b0000010000,
                             "AN4rv2a525o": 0b0100010100,
                                 "Yn3py6Jg4vg": 0b0100000000,
-                                    "a5TN0Yh2K-o": 0b0100010100,
+                                    "a5TN0Yh2K-o": 0b0100101000,
                                         "4UDD_yw-LLw": 0b0100010100,
     "ZN2fCpyyvHM": 0b0100000000,
         "vk3tY4hwr3M": 0b0100010100,
@@ -67,7 +67,7 @@ var log = {
                     "jcoDoevVaRY": 0b0100010100,
                         "Z7R53guChEw": 0b0101000000,
                             "CqYbQtSDgRg": 0b0100000000,
-                                "7-3fxArOihA": 0b0100101000, /* model only; love-chan barely speaks */
+                                "7-3fxArOihA": 0b0100101000,
                                     "g-mJFePjioc": 0b0100010100,
                                         "28nFMCVcNgs": 0b0000010000,
     "IgMIaMi1xKY": 0b0000010000,
@@ -87,7 +87,7 @@ var log = {
                     "-qxnyyQcI1k": 0b0000000100,
                         "7giIn3nD2J4": 0b0000010000,
                             "aP0jjmyFT_k": 0b0100000000,
-                                "wb389a_nGFg": 0b1000010000, /* ai-chan in past video */
+                                "wb389a_nGFg": 0b1000010000,
                                     "nuPZ9kykhd8": 0b0000010000,
                                         "85Qz1Ueu54U": 0b0100000000,
     "sFEX8foiZgQ": 0b0100010000,
@@ -113,12 +113,12 @@ var log = {
     "hozkMbbmbKc": 0b0100010000,
         "CK-nRQWABmI": 0b0100010100,
             "q5WRHGV4Dd4": 0b0000010000,
-                "8GJBo9_CLZE": 0b0100101000, /* love-chan and ai-pii in photos */
+                "8GJBo9_CLZE": 0b0100101000,
                     "bGe8ZM7pmo4": 0b0100010000,
                         "VgD9kePgjxU": 0b0100010100,
-                            "0MUE3adMsxQ": 0b0110000000, /* black ai in fanart and mimicked */
+                            "0MUE3adMsxQ": 0b0110000000,
                                 "7oqBb5doaj8": 0b0100000000,
-                                    "_dK_gMb3j1k": 0b0100010100,
+                                    "_dK_gMb3j1k": 0b0100101000,
                                         "bZ-rAQ5Canc": 0b0100010000,
     "9GjqJbj6NFA": 0b0000010100,
         "zAzrU3Rw2mI": 0b0100000000,
@@ -138,7 +138,7 @@ var log = {
                         "nMIMTRi7Z5k": 0b0100000000,
                             "6C17mB-ie3E": 0b0100000000,
                                 "Adn4uSppCIo": 0b0000010000,
-                                    "MXIYKGL02zU": 0b1000000000, /* model only; could be any of them */
+                                    "MXIYKGL02zU": 0b1000000000,
                                         "NODXqLtXZY8": 0b0100000000,
     "9RX31XDR1nA": 0b0100000000,
         "AcL2hXWIZV4": 0b0000010100,
@@ -191,7 +191,7 @@ var log = {
                                     "yLrstz80MKs": 0b0100000000,
                                         "BsLyJ6MTVys": 0b0100000000,
     "TS5nUE45oQY": 0b0000000100,
-        "M1nAuPeLZpc": 0b0100101000, /* model-only */
+        "M1nAuPeLZpc": 0b0100101000,
             "ZzFBRe2X0lI": 0b0100000000,
                 "F7Im6HaWR4Q": 0b0100000000,
                     "3sPnwZUMckE": 0b0100000000,
@@ -224,7 +224,7 @@ var log = {
         "rk6tmfNsPpk": 0b0100000000,
             "g4sBXh6vlPM": 0b0100000000,
                 "FYfgwCx4N7A": 0b0100000000,
-                    "Rj_7z4KdJi0": 0b0110000000, /* black ai in past video */
+                    "Rj_7z4KdJi0": 0b0110000000,
                         "V_bxAXiI3iY": 0b0100010000,
                             "KuJIyXK9yYw": 0b0100010000,
                                 "EaRByR8FB_0": 0b0100000000,
