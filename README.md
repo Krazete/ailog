@@ -4,6 +4,23 @@ An interactive log of all videos on [A.I.Channel](https://www.youtube.com/aichan
 
 Its main purpose is to show which videos AI-chan, Black AI, Love-chan, AI-pii, and AI-bro participated in.
 
+## Versions
+
+There are two versions of the attendance log:
+
+### [Live Version](https://krazete.github.io/ailog/live)
+
+* uses the YouTube Data API to retrieve up-to-date information for each video
+* sometimes messes up the chronological order due to loading videos in batches of 50
+
+### [Static Version](https://krazete.github.io/ailog/static)
+
+* probably has nearly identical data because ratings and view counts don't change much months after a video is published
+* loads faster (it isn't held back by quota limits, so videos don't need to be lazy loaded)
+* doesn't have any weird order issues
+
+Both versions lazy load all thumbnails for efficiency and faster initialization.
+
 ## Notes
 
 I reviewed and marked all 488 videos myself.
@@ -24,20 +41,3 @@ More importantly, it means some later videos which should be included are not di
 
 Due to the rarity of collaborations on A.I.Channel China, this error is a minor one.
 Thus, I did not make any attempt to fix the issue.
-
-## Versions
-
-There are two versions of the attendance log:
-
-### [Live Version](https://krazete.github.io/ailog/live)
-
-* uses the YouTube Data API to retrieve up-to-date information for each video
-* sometimes messes up the chronological order due to loading videos in batches of 50
-
-### [Static Version](https://krazete.github.io/ailog/static)
-
-* probably has nearly identical data because ratings and view counts don't change much months after a video is published
-* loads faster (it isn't held back by quota limits, so videos don't need to be lazy loaded)
-* doesn't have any weird order issues
-
-Both versions lazy load all thumbnails for efficiency and faster initialization.
