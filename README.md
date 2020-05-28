@@ -10,7 +10,7 @@ There are two versions of the attendance log:
   * uses the YouTube Data API to retrieve up-to-date information for each video
   * sometimes messes up the chronological order due to loading videos in batches of 50
 
-* [Static Version](https://krazete.github.io/ailog/live)
+* [Static Version](https://krazete.github.io/ailog/static)
   * probably has nearly identical data, since ratings and view count don't change much months after a video is published
   * loads faster (it isn't held back by quota limits, so videos don't need to be lazy loaded)
   * doesn't have any weird order issues
