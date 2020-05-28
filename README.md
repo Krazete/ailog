@@ -11,10 +11,10 @@ There are two versions of the attendance log:
   * sometimes messes up the chronological order due to loading videos in batches of 50
 
 * [Static Version](https://krazete.github.io/ailog/static)
-  * probably has nearly identical data, since ratings and view count don't change much months after a video is published
+  * probably has nearly identical data because ratings and view counts don't change much months after a video is published
   * loads faster (it isn't held back by quota limits, so videos don't need to be lazy loaded)
   * doesn't have any weird order issues
   * just use the static version
 
-This website was made mostly as a reaction to the common misinformed claim that the original voice model was replaced. Hopefully this project can clarify that this never was the case.
-
+This website was made mostly as a reaction to the common misinformed claim that the original voice model was replaced.
+Hopefully this project can clarify that this never was the case.
