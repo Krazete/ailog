@@ -12,7 +12,7 @@ The website's symbols for each AI should be obvious, but here's a chart anyway:
 |:-:|-|
 |<img src="icon/ai.png" width="32px">|AI-chan / Oyabun / Original / OG|
 |<img src="icon/black.png" width="32px">|Black AI|
-|<img src="icon/love.png" width="32px">|Love-chan / AIneesan / キュール / AI #2|
+|<img src="icon/love.png" width="32px">|Love-chan / AInee / キュール / AI #2|
 |<img src="icon/pii.png" width="32px">|AI-pii / AImouto / すきぴ / AI #3|
 |<img src="icon/bro.png" width="32px">|AI-bro / AI-ge / Chinese AI / AI #4|
 
