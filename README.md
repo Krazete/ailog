@@ -53,10 +53,10 @@ Meanwhile, her voice model Kasuga Nozomi took on some voice acting roles:
 * Infinite Dendrogram (as the interface AI)
 * Shirobako Movie (as a virtual idol) *(I haven't seen it, I'm just taking Discord user Guest#3616's word for it.)*
 
-In short, she hasn't been replaced.
-She's been busy.
+In short, she wasn't replaced.
+She was busy.
 
-Hopefully this project helps to clarify the fact that AI-chan has never left.
+Hopefully this project helps to clarify the fact that AI-chan never left.
 
 ## Additional Notes
 
