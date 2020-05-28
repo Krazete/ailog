@@ -29,11 +29,6 @@ h1, h2, h3, p, ul {
 	margin: 8px 0;
 }
 
-#version {
-	color: gray;
-	font-size: 12px;
-}
-
 .flexbox {
 	display: flex;
 }
@@ -80,6 +75,21 @@ h1, h2, h3, p, ul {
 	-webkit-filter: none;
 	filter: none;
 	box-shadow: inset 0 0 4px 4px var(--shadow);
+}
+
+#version {
+	color: gray;
+	font-size: 12px;
+}
+
+#github {
+	position: absolute;
+	left: 4px;
+	top: 4px;
+}
+
+#github img {
+	width: 32px;
 }
 
 #options {
