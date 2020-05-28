@@ -6,7 +6,7 @@ Its main purpose is to show which videos AI-chan, Black AI, Love-chan, AI-pii, a
 
 ## Versions
 
-There are two versions of the attendance log:
+There are two versions of the attendance log.
 
 ### [Live Version](https://krazete.github.io/ailog/live)
 
@@ -24,8 +24,8 @@ Both versions lazy load all thumbnails for efficiency and faster initialization.
 ## Notes
 
 I reviewed and marked all 488 videos myself.
-
 While I did thoroughly check each video, I may have missed some entries.
+
 I would've missed AI-chan and Love-chan in AI-pii's Christmas livestream if I hadn't checked the last few minutes knowing it was the last of 3 livestreams that day.
 I also would've missed Love-chan's participation in AI-pii's 9-hour livestream if I hadn't checked timestamps in the comment section.
 
