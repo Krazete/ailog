@@ -676,7 +676,6 @@ function initBasics() {
                 selection.push("bro");
             }
             var selectors = combos([".unit"], selection, 0);
-            console.log(selectors);
             filcss.innerHTML = ".unit {opacity: 0.25;} " + selectors.join(", ") + " {opacity: 1;}";
         }
     }
