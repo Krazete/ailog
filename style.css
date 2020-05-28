@@ -132,6 +132,8 @@ h1, h2, h3, p, ul {
 }
 
 .units {
+	display: flex; /* grid fallback */
+	flex-wrap: wrap; /* grid fallback */
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	border: 4px solid;
@@ -177,6 +179,7 @@ h1, h2, h3, p, ul {
 
 .unit {
 	text-decoration: none;
+	flex: 1 200px; /* grid fallback */
 	margin: 4px;
 }
 
