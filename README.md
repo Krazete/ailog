@@ -39,7 +39,7 @@ This project was made mostly in response to the common misinformed claim that th
 This was never the case.
 
 AI-chan said during AI Party 2019 that [she never planned on leaving](https://warosu.org/jp/thread/21612492#p21615639).
-Two weeks later, AI-pii [addressed the growing concerns in her livestream](https://youtu.be/IwIoDYymgVs?t=61) saying AI-chan wasn't leaving, and she'd bring her back if she did.
+A month later, AI-pii [addressed the growing concerns in her livestream](https://youtu.be/IwIoDYymgVs?t=61) saying AI-chan wasn't leaving, and she'd bring her back if she did.
 
 During Love-chan's and AI-pii's existence as Kizuna AIs, AI-chan:
 
