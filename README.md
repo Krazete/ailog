@@ -4,6 +4,8 @@ An interactive log of all videos on [A.I.Channel](https://www.youtube.com/aichan
 
 Its main purpose is to show which videos AI-chan, Black AI, Love-chan, AI-pii, and AI-bro participated in.
 
+![ailovepii](ailovepii.gif)
+
 ## Symbols
 
 The website's symbols for each AI should be obvious, but here's a chart anyway:
