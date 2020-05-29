@@ -151,7 +151,7 @@ var log = {
                                     "dfk2u2suOcA": 0b0000000100,
                                         "nOKZ8YWTRa0": 0b0100000000,
     "3Nu1Oyo5Ay4": 0b0100000000,
-        "vnXI-ITdKZ8": 0b0000010100,
+        "vnXI-ITdKZ8": 0b0100010000,
             "WOFcwkVOWmo": 0b0000010000,
                 "4hWaJoAc3WQ": 0b0000010000,
                     "ttuQqpCpGSM": 0b0001000000,
