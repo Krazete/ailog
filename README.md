@@ -62,7 +62,7 @@ Thus, I did not make any attempt to fix the issue.
 
 ### Motivation
 
-This project was made mostly in response to the common [misinformed claim](REPLACEMENT.md) that the original has been replaced or was being forced out by upd8.
+This project was made mostly in response to the common [misinformed claim](SUPPLEMENTARY.md) that the original has been replaced or was being forced out by upd8.
 This was never the case.
 
 AI-chan said during AI Party 2019 that [she never planned on leaving](https://warosu.org/jp/thread/21612492#p21615639).
