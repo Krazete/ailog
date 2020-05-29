@@ -6,7 +6,7 @@ The [replacement conspiracy theory](https://www.bilibili.com/read/cv3226164) has
 
 ## Absence
 
-In the three or so months following AI Party 2019, AI-chan's uploads seemed to be from a backlog of videos recorded before the event. For example:
+In the three months following AI Party 2019, AI-chan's uploads seemed to be from a backlog of videos recorded before the event. For example:
 
 * Love-chan and AI-pii sometimes used the newer 3D model (apparent from the updated shoulders and bangs); AI-chan always used the old 3D model.
 * A snapshot of her [face filter video in September](https://youtu.be/Qbu3GhkT7Cc) was posted [on Twitter back in June](https://twitter.com/aichan_nel/status/1140843072797851648).
