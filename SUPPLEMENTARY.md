@@ -1,4 +1,4 @@
-# The Replacement Conspiracy Theory
+# The First Three Months
 
 The attendance log doesn't show the full picture.
 
