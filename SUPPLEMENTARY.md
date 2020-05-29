@@ -17,7 +17,7 @@ So while she showed up in videos, AI-chan did indeed appear to be absent for a w
 
 ### Voice Acting
 
-Kizuna AI's voice model, Kasuga Nozomi, had a voice acting role in Granbelm shortly after AI Party 2019. (I don't know if voicing a minor character constitutes enough reason to be too busy for YouTube, but I'll count it as one reason.)
+Kizuna AI's voice model, Kasuga Nozomi, had a voice acting role in Granbelm shortly after AI Party 2019. (I don't know if voicing a minor character constitutes enough reason to be too busy for YouTube, but I'll count it.)
 
 ### Official Statements
 
