@@ -70,7 +70,7 @@ A month later, AI-pii [addressed the growing concerns in her livestream](https:/
 
 During Love-chan's and AI-pii's existence as Kizuna AIs, AI-chan:
 
-* released the song [Sky High](https://youtu.be/yLrstz80MKs) ([whose lyrics can't contain a secret message from her since she didn't write it](https://youtu.be/vk3tY4hwr3M?t=546)),
+* released the song [Sky High](https://youtu.be/yLrstz80MKs),
 * [performed](https://i.imgur.com/nAEKjBZ.png) at [Summer Sonic](https://youtu.be/O57ueFS0M6o), [DIVE XR Festival](https://twitter.com/aichan_nel/status/1175769837622030337), [J-WAVE Innovation World Festa](https://twitter.com/aichan_nel/status/1173189719578042369), [Bilibili Macro Link Visual Release](https://twitter.com/aichan_nel/status/1152094751849504770), and
 * cohosted the television program [てえてえTV](https://cu.ntv.co.jp/program/tetete2/) alongside fellow upd8 members the Omega Sisters
 
