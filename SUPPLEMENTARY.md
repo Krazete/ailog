@@ -31,7 +31,7 @@ In the month after Summer Sonic, her uploads were still scarce (as stated in the
 
 ## Return
 
-From October 2019 on, she seemed to have actually returned to YouTube. Often appearing alongside Love-chan and AI-pii, nobody could reasonably argue that these new videos were months-old recordings. The appearances weren't as frequent as they were before (she used to upload almost daily to both channels), but she was back.
+From October 2019 on, she seemed to have actually returned to YouTube. Often appearing alongside Love-chan and AI-pii, nobody could reasonably argue that these new videos were months-old recordings. Although her appearances weren't as frequent as they were before (she used to upload almost daily to both channels), she was back.
 
 This is where the replacement rumor should've ended.
 

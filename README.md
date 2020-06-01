@@ -51,6 +51,14 @@ If I did get anything wrong, please let me know.
 * Discord: Krazete#7038
 * Reddit: u/krazete
 
+### Unlisted and Members-Only Videos
+
+The website uses the default Channel Uploads playlist for each channel, which means it only includes publicly listed videos.
+
+The [A.I.Games Video List](https://www.youtube.com/playlist?list=PLWkRfirH7n-tCgddNgyWCSK8QGsK8EV7L) playlist has a bunch of additional videos which are unlisted and members-only, but nearly all of these have a publicly listed digest version and are thus better off excluded.
+
+The most notable exception is [Love-chan and AI-pii's gameplay of Man of Medan](https://youtu.be/dzmzokLdeIA), which is unlisted but thankfully not members-only. Other exceptions include [upd8's Pokémon Sword and Shield Tournament](https://youtu.be/AQuB3W1p4Yg) and [AI-pii's PUBG Lite stream](https://youtu.be/3kqEOhDv-7o), which are members-only.
+
 ### A.I.Channel China
 
 I realize A.I.Channel China's videos were uploaded on Bilibili much earlier than their YouTube publish date.
