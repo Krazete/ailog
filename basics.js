@@ -1,7 +1,22 @@
 var log = {
     /* A.I.Channel */
+                        "WqjlvkL1fDg": 0b0101010110,
+                            "BcXAntXEPOU": 0b0100100100,
+                                "35iKFJOVd2Y": 0b0100000000,
+                                    "PmvY1brnFn4": 0b0100000000,
+                                        "iT_B8liBTqc": 0b0100000000,
+    "ykDAXkLOVBE": 0b0100000000,
+        "5XN2rsh6Dis": 0b0001000000,
+            "VSCs8Uh9hx0": 0b0100000000,
+                "WEdknSDUFpQ": 0b0100000000,
+                    "a1szFeAZWQA": 0b0100000000,
+                        "hVIFzXkQ-JA": 0b0101000000,
+                            "mP0gLxUiXjM": 0b0100000000,
+                                "nvL28p_C3gY": 0b0100000000,
+                                    "tqwalJkMX7c": 0b0100000000,
+                                        "eocyhw0D394": 0b0100000000,
     "KKjJyNB0vkA": 0b0100010100,
-        "AmLFSguxTRY": 0b0100010110,
+        "AmLFSguxTRY": 0b0100010110, /* love-pii announcement */
             "ngGbru6_MVQ": 0b1001000000,
                 "nWquN1L5aQc": 0b0100000000,
                     "U0PL7g7BTyw": 0b0100000000,
@@ -67,7 +82,7 @@ var log = {
                     "jcoDoevVaRY": 0b0100010100,
                         "Z7R53guChEw": 0b0101000000,
                             "CqYbQtSDgRg": 0b0100000000,
-                                "7-3fxArOihA": 0b0100101000,
+                                "7-3fxArOihA": 0b0100011000,
                                     "g-mJFePjioc": 0b0100010100,
                                         "28nFMCVcNgs": 0b0000010000,
     "IgMIaMi1xKY": 0b0000010000,
@@ -241,8 +256,18 @@ var log = {
                                     "iOHEv77qC4w": 0b0100000000,
                                         "cWwohKOmgqA": 0b0100000000,
     /* A.I.Games */
+    "9cOVmaEhfJw": 0b0100000000,
+        "LWnh_ULTyIg": 0b0100000000,
+            "YVYYMghyRXc": 0b0100000000,
+                "1N8w-Pw1oek": 0b0100000000,
+                    "IQrVl7_NSZI": 0b0100000000,
+                        "bE-T6xcwJ7s": 0b0100000000,
+                            "8ETqw2eP3KY": 0b0100000000,
+                                "NTp1EvMc-k4": 0b0100000000,
+                                    "WBenXCQ9W7A": 0b0100000000,
+                                        "hFr6QJiYI4g": 0b0100000000,
     "XbiqzviLbIk": 0b0100000000,
-        "MyuxWYStk-w": 0b0000000100,
+        "MyuxWYStk-w": 0b0000000100, /* ai-pii's last game */
             "9D8FtEF_qws": 0b0000010000,
                 "vBx9L91Js4w": 0b0000000100,
                     "arbTh38v7qY": 0b0000010000,
@@ -462,6 +487,11 @@ var log = {
                                     "9LiqSTVnkDU": 0b0100000000,
                                         "Z27HoSoMeAY": 0b0100000000,
     /* A.I.Channel China */
+                        "UUgug00s4EE": 0b0000000001,
+                            "Mv5gIEDkgAw": 0b0000000001,
+                                "JAXvjcXxkzU": 0b0000000001,
+                                    "o-hWbnsaTgc": 0b0000000001,
+                                        "Ja8ulLwku0E": 0b0000000001,
     "FUkA9Ieth9E": 0b0000000001,
         "7uKQAWntH2U": 0b0000000001,
             "SFXEP2CZbI4": 0b0000000001,
@@ -498,120 +528,120 @@ function darken(hex, rating) {
 
 function parseRatingBar(rating) {
     var blue = "#3e" + darken(0xa6, rating) + darken(0xff, rating);
-	return "linear-gradient(to right, " + blue + " " + rating + "%, #606060 " + rating + "%)";
+    return "linear-gradient(to right, " + blue + " " + rating + "%, #606060 " + rating + "%)";
 }
 
 function parseRating(rating) {
-	return Math.floor(10 * rating) / 10 + "%";
+    return Math.floor(10 * rating) / 10 + "%";
 }
 
 function parseDuration(duration) {
-	var hMatch = duration.match(/(\d+)H/);
-	var mMatch = duration.match(/(\d+)M/);
-	var sMatch = duration.match(/(\d+)S/);
-	var h = hMatch ? parseInt(hMatch[1]) : 0;
-	var m = mMatch ? parseInt(mMatch[1]) : 0;
-	var s = sMatch ? parseInt(sMatch[1]) : 0;
+    var hMatch = duration.match(/(\d+)H/);
+    var mMatch = duration.match(/(\d+)M/);
+    var sMatch = duration.match(/(\d+)S/);
+    var h = hMatch ? parseInt(hMatch[1]) : 0;
+    var m = mMatch ? parseInt(mMatch[1]) : 0;
+    var s = sMatch ? parseInt(sMatch[1]) : 0;
 
-	return (h ? h + ":" + m.toString().padStart(2, "0") : m) + ":" + s.toString().padStart(2, "0");
+    return (h ? h + ":" + m.toString().padStart(2, "0") : m) + ":" + s.toString().padStart(2, "0");
 }
 
 function parseViews(views) {
-	return (
-		views > 1e9 ? Math.floor(views / 1e9) + "B" :
-		views > 1e6 ? Math.floor(views / 1e6) + "M" :
-		views > 1e3 ? Math.floor(views / 1e3) + "K" :
-		views
-	) + " views";
+    return (
+    views > 1e9 ? Math.floor(views / 1e9) + "B" :
+    views > 1e6 ? Math.floor(views / 1e6) + "M" :
+    views > 1e3 ? Math.floor(views / 1e3) + "K" :
+    views
+    ) + " views";
 }
 
 function newUnit(id, title, thumbnail, timestamp, duration, rating, views) {
-	var unit = document.createElement("a");
-	unit.id = id;
-	unit.className = "unit";
+    var unit = document.createElement("a");
+    unit.id = id;
+    unit.className = "unit";
 
     if (log[id] & 0b1000000000) {
-		unit.classList.add("aiish");
-	}
+    unit.classList.add("aiish");
+    }
     if (log[id] & 0b0100000000) {
-		unit.classList.add("ai");
-	}
-	if (log[id] & 0b0010000000) {
-		unit.classList.add("blackish");
-	}
+    unit.classList.add("ai");
+    }
+    if (log[id] & 0b0010000000) {
+    unit.classList.add("blackish");
+    }
     if (log[id] & 0b0001000000) {
-		unit.classList.add("black");
-	}
-	if (log[id] & 0b0000100000) {
-		unit.classList.add("loveish");
-	}
+    unit.classList.add("black");
+    }
+    if (log[id] & 0b0000100000) {
+    unit.classList.add("loveish");
+    }
     if (log[id] & 0b0000010000) {
-		unit.classList.add("love");
-	}
-	if (log[id] & 0b0000001000) {
-		unit.classList.add("piiish");
-	}
+    unit.classList.add("love");
+    }
+    if (log[id] & 0b0000001000) {
+    unit.classList.add("piiish");
+    }
     if (log[id] & 0b0000000100) {
-		unit.classList.add("pii");
-	}
-	if (log[id] & 0b0000000010) {
-		unit.classList.add("broish");
-	}
+    unit.classList.add("pii");
+    }
+    if (log[id] & 0b0000000010) {
+    unit.classList.add("broish");
+    }
     if (log[id] & 0b0000000001) {
-		unit.classList.add("bro");
-	}
+    unit.classList.add("bro");
+    }
 
-	var sentiment = document.createElement("div");
-	sentiment.className = "sentiment";
-	if (rating) {
-		sentiment.style.backgroundImage = parseRatingBar(rating);
-		sentiment.innerHTML = parseRating(rating);
-	}
-	unit.appendChild(sentiment);
+    var sentiment = document.createElement("div");
+    sentiment.className = "sentiment";
+    if (rating) {
+    sentiment.style.backgroundImage = parseRatingBar(rating);
+    sentiment.innerHTML = parseRating(rating);
+    }
+    unit.appendChild(sentiment);
 
-	var thumb = document.createElement("a");
-	thumb.className = "thumb";
-	if (duration) {
-		thumb.dataset.duration = parseDuration(duration);
-	}
-	thumb.target = "_blank";
-	thumb.href = "https://youtu.be/" + id;
-	unit.appendChild(thumb);
+    var thumb = document.createElement("a");
+    thumb.className = "thumb";
+    if (duration) {
+    thumb.dataset.duration = parseDuration(duration);
+    }
+    thumb.target = "_blank";
+    thumb.href = "https://youtu.be/" + id;
+    unit.appendChild(thumb);
 
-	var img = new Image();
-	img.alt = title;
+    var img = new Image();
+    img.alt = title;
     img.src = "https://i.ytimg.com/";
     img.dataset.src = thumbnail;
-	thumb.appendChild(img);
+    thumb.appendChild(img);
 
-	var attendance = document.createElement("div");
-	attendance.className = "attendance dye";
-	unit.appendChild(attendance);
+    var attendance = document.createElement("div");
+    attendance.className = "attendance dye";
+    unit.appendChild(attendance);
 
-	for (var member of ["ai", "black", "love", "pii", "bro"]) {
-		var slot = document.createElement("div");
-		slot.className = member;
-		attendance.appendChild(slot);
-	}
+    for (var member of ["ai", "black", "love", "pii", "bro"]) {
+    var slot = document.createElement("div");
+    slot.className = member;
+    attendance.appendChild(slot);
+    }
 
-	var label = document.createElement("div");
-	label.className = "title dye";
-	label.innerHTML = title;
-	unit.appendChild(label);
+    var label = document.createElement("div");
+    label.className = "title dye";
+    label.innerHTML = title;
+    unit.appendChild(label);
 
-	var viewcount = document.createElement("div");
-	viewcount.className = "viewcount";
-	if (views) {
-		viewcount.innerHTML = parseViews(views);
-	}
-	unit.appendChild(viewcount);
+    var viewcount = document.createElement("div");
+    viewcount.className = "viewcount";
+    if (views) {
+    viewcount.innerHTML = parseViews(views);
+    }
+    unit.appendChild(viewcount);
 
-	var date = document.createElement("div");
-	date.className = "date";
-	date.innerHTML = new Date(timestamp).toLocaleDateString();
-	unit.appendChild(date);
+    var date = document.createElement("div");
+    date.className = "date";
+    date.innerHTML = new Date(timestamp).toLocaleDateString();
+    unit.appendChild(date);
 
-	return unit;
+    return unit;
 }
 
 function initBasics() {

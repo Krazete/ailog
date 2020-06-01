@@ -1,70 +1,70 @@
 :root {
-	--ai: #F4BBC3;
-	--black: #606060;
-	--love: #40FFFF;
-	--pii: #FFFF40;
-	--bro: #FF4040;
+    --ai: #F4BBC3;
+    --black: #606060;
+    --love: #40FFFF;
+    --pii: #FFFF40;
+    --bro: #FF4040;
 }
 
 body {
-	background: black;
-	color: white;
-	font-family: 'Roboto', 'Arial', sans-serif;
+    background: black;
+    color: white;
+    font-family: 'Roboto', 'Arial', sans-serif;
 }
 
 h1 {
-	font-size: 24px;
-	text-align: center;
+    font-size: 24px;
+    text-align: center;
 }
 h2 {
-	font-size: 20px;
+    font-size: 20px;
 }
 h3 {
-	font-size: 16px;
+    font-size: 16px;
 }
 p, ul {
-	font-size: 14px;
+    font-size: 14px;
 }
 h1, h2, h3, p, ul {
-	margin: 8px 0;
+    margin: 8px 0;
 }
 
 .flexbox {
-	display: flex;
+    display: flex;
 }
 
 #info {
-	flex: auto;
+    flex: auto;
 }
 
 #info .flexbox {
-	max-width: 1000px;
+    max-width: 1000px;
 }
 
 .role {
-	flex: 1;
-	padding: 4px;
-	border: 4px solid #606060;
-	border-radius: 4px;
-	margin: 4px;
+    flex: 1;
+    padding: 4px;
+    border: 4px solid #606060;
+    border-radius: 4px;
+    margin: 4px;
 }
 
 .legend {
-	font-size: 12px;
-	text-align: center;
-	flex: 1;
+    font-size: 12px;
+    text-align: center;
+    flex: 1;
 }
 
 .legend img {
-	width: 24px;
+    width: 24px;
 }
 
 #filter {
-	flex: none;
+    flex: none;
 }
 
 #filter input {
-	display: none;
+    display: none;
 }
 
 #filai + label {--shadow: var(--ai);}
@@ -74,94 +74,94 @@ h1, h2, h3, p, ul {
 #filbro + label {--shadow: var(--bro);}
 
 #filter img {
-	-webkit-filter: contrast(0);
-	filter: contrast(0);
-	box-shadow: inset 0 0 4px white;
-	width: 40px;
-	display: block;
-	padding: 8px;
-	border-radius: 8px;
-	margin: 4px auto;
-	cursor: pointer;
+    -webkit-filter: contrast(0);
+    filter: contrast(0);
+    box-shadow: inset 0 0 4px white;
+    width: 40px;
+    display: block;
+    padding: 8px;
+    border-radius: 8px;
+    margin: 4px auto;
+    cursor: pointer;
 }
 #filter input:checked + label img {
-	-webkit-filter: none;
-	filter: none;
-	box-shadow: inset 0 0 4px 4px var(--shadow);
+    -webkit-filter: none;
+    filter: none;
+    box-shadow: inset 0 0 4px 4px var(--shadow);
 }
 
 #version {
-	color: gray;
-	font-size: 12px;
+    color: gray;
+    font-size: 12px;
 }
 
 #github {
-	position: absolute;
-	left: 4px;
-	top: 4px;
+    position: absolute;
+    left: 4px;
+    top: 4px;
 }
 
 #github img {
-	width: 32px;
+    width: 32px;
 }
 
 #options {
-	font-size: 24px;
-	display: flex;
+    font-size: 24px;
+    display: flex;
 }
 
 #options input {
-	display: none;
+    display: none;
 }
 
 #options label {
-	text-align: center;
-	flex: 1;
-	padding-top: 4px;
-	border-radius: 4px 4px 0 0;
-	margin-top: auto;
-	cursor: pointer;
+    text-align: center;
+    flex: 1;
+    padding-top: 4px;
+    border-radius: 4px 4px 0 0;
+    margin-top: auto;
+    cursor: pointer;
 }
 #options input#optchannel + label {
-	color: var(--ai);
+    color: var(--ai);
 }
 #options input#optgames + label {
-	color: var(--love);
+    color: var(--love);
 }
 #options input#optchina + label {
-	color: var(--bro);
+    color: var(--bro);
 }
 #options input#optchannel:checked + label {
-	background: var(--ai);
-	color: black;
+    background: var(--ai);
+    color: black;
 }
 #options input#optgames:checked + label {
-	background: var(--love);
-	color: black;
+    background: var(--love);
+    color: black;
 }
 #options input#optchina:checked + label {
-	background: var(--bro);
-	color: black;
+    background: var(--bro);
+    color: black;
 }
 
 .units {
-	display: flex; /* grid fallback */
-	flex-wrap: wrap; /* grid fallback */
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	border: 4px solid;
+    display: flex; /* grid fallback */
+    flex-wrap: wrap; /* grid fallback */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    border: 4px solid;
 }
 #aichannel {
-	color: var(--ai);
-	border-color: var(--ai);
+    color: var(--ai);
+    border-color: var(--ai);
 }
 #aigames {
-	color: var(--love);
-	border-color: var(--love);
+    color: var(--love);
+    border-color: var(--love);
 }
 #aichina {
-	color: var(--bro);
-	border-color: var(--bro);
+    color: var(--bro);
+    border-color: var(--bro);
 }
 
 .units:after {
@@ -178,54 +178,54 @@ h1, h2, h3, p, ul {
     animation: oscillate 1s linear infinite alternate;
 }
 .units.complete:after {
-	display: none;
+    display: none;
 }
 
 @keyframes oscillate {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .unit {
-	text-decoration: none;
-	flex: 1 200px; /* grid fallback */
-	margin: 4px;
+    text-decoration: none;
+    flex: 1 200px; /* grid fallback */
+    margin: 4px;
 }
 
 .sentiment {
-	color: black;
-	font-size: 12px;
-	text-align: center;
-	position: relative;
-	min-height: 12px;
-	width: 100%;
-	border-radius: 4px 4px 0 0;
+    color: black;
+    font-size: 12px;
+    text-align: center;
+    position: relative;
+    min-height: 12px;
+    width: 100%;
+    border-radius: 4px 4px 0 0;
 }
 
 .thumb {
-	position: relative;
-	display: block;
-	overflow: hidden;
+    position: relative;
+    display: block;
+    overflow: hidden;
 }
 
 .thumb img {
-	width: 100%;
-	margin: -10% 0;
+    width: 100%;
+    margin: -10% 0;
 }
 
 .thumb:after {
-	content: attr(data-duration);
-	background-color: #00000080;
-	color: white;
-	font-size: 12px;
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	padding: 2px 4px;
+    content: attr(data-duration);
+    background-color: #00000080;
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 2px 4px;
 }
 
 .dye {background: white; color: black;}
@@ -262,37 +262,37 @@ h1, h2, h3, p, ul {
 .ai.black.love.pii.bro .dye {background: linear-gradient(to right, var(--ai) 10%, var(--black), var(--love), var(--pii), var(--bro) 90%);}
 
 .attendance {
-	display: flex;
-	padding: 0 2px;
+    display: flex;
+    padding: 0 2px;
 }
 
 .attendance div {
-	height: 20px;
-	flex: 1;
-	border-radius: 4px;
-	margin: 2px;
+    height: 20px;
+    flex: 1;
+    border-radius: 4px;
+    margin: 2px;
 }
 .ai .ai,
 .black .black,
 .love .love,
 .pii .pii,
 .bro .bro {
-	background-color: black;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: auto 100%;
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
 }
 .aiish .ai,
 .blackish .black,
 .loveish .love,
 .piiish .pii,
 .broish .bro {
-	-webkit-filter: brightness(0);
-	filter: brightness(0);
-	background-color: transparent;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: auto 100%;
+    -webkit-filter: brightness(0);
+    filter: brightness(0);
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
 }
 .ai .ai, .aiish .ai {background-image: url('icon/ai.png');}
 .black .black, .blackish .black {background-image: url('icon/black.png');}
@@ -301,32 +301,32 @@ h1, h2, h3, p, ul {
 .bro .bro, .broish .bro {background-image: url('icon/bro.png');}
 
 .title {
-	font-size: 14px;
-	line-height: 20px;
-	position: relative;
-	min-height: 40px;
+    font-size: 14px;
+    line-height: 20px;
+    position: relative;
+    min-height: 40px;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     overflow: hidden;
     padding: 0 4px;
-	border-radius: 0 0 4px 4px;
+    border-radius: 0 0 4px 4px;
 }
 
 .viewcount {
-	color: gray;
-	font-size: 12px;
-	position: relative;
-	float: left;
+    color: gray;
+    font-size: 12px;
+    position: relative;
+    float: left;
 }
 
 .date {
-	color: gray;
-	font-size: 12px;
-	position: relative;
-	float: right;
+    color: gray;
+    font-size: 12px;
+    position: relative;
+    float: right;
 }
 
 .hidden {
-	display: none;
+    display: none;
 }

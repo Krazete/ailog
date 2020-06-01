@@ -6,7 +6,7 @@ The [replacement conspiracy theory](https://www.bilibili.com/read/cv3226164) has
 
 ## Absence
 
-In the three months following AI Party 2019, AI-chan's uploads seemed to be from a backlog of videos recorded before the event. For example:
+In the three months following AI Party 2019, AI-chan's uploads seemed to come from a backlog of videos recorded before the event. For example:
 
 * Love-chan and AI-pii sometimes used the newer 3D model (apparent from the updated shoulders and bangs); AI-chan always used the old 3D model.
 * A snapshot of her [face filter video in September](https://youtu.be/Qbu3GhkT7Cc) was posted [on Twitter back in June](https://twitter.com/aichan_nel/status/1140843072797851648).
@@ -31,7 +31,7 @@ In the month after Summer Sonic, her uploads were still scarce (as stated in the
 
 ## Return
 
-From October 2019 on, she seemed to have actually returned to YouTube. Often appearing alongside Love-chan and AI-pii, nobody could reasonably argue that these new videos were months-old recordings.
+From October 2019 on, she seemed to have actually returned to YouTube. Often appearing alongside Love-chan and AI-pii, nobody could reasonably argue that these new videos were months-old recordings. The appearances weren't as frequent as they were before (she used to upload almost daily to both channels), but she was back.
 
 This is where the replacement rumor should've ended.
 
