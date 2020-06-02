@@ -1,5 +1,6 @@
 var log = {
     /* A.I.Channel */
+                    "jiozWWb6RvA": 0b0110000000,
                         "WqjlvkL1fDg": 0b0101010110,
                             "BcXAntXEPOU": 0b0100100100,
                                 "35iKFJOVd2Y": 0b0100000000,
@@ -31,7 +32,7 @@ var log = {
                 "5fMa5kaLl78": 0b0100010100,
                     "bT5tLvs8MQk": 0b0000010100,
                         "Pa6m6h4dplc": 0b0100000000,
-                            "9rm2x8_m-oo": 0b0100000000,
+                            "9rm2x8_m-oo": 0b0100000000, /* company announcement */
                                 "TOuSoFqGkwQ": 0b0100000000,
                                     "Io_GOr3YAN0": 0b0100000000,
                                         "IPN67RJBewc": 0b0000010000,
@@ -234,14 +235,14 @@ var log = {
                             "PR798cKXRKg": 0b0100000000,
                                 "Uvoxx3UR2LE": 0b0100000000,
                                     "HOikEKbpYE0": 0b0100000100,
-                                        "I17_ia2vqX0": 0b0100010100,
+                                        "I17_ia2vqX0": 0b0100010100, /* ai-pii installed */
     "c8PaL8ncozg": 0b0100000000,
         "rk6tmfNsPpk": 0b0100000000,
             "g4sBXh6vlPM": 0b0100000000,
                 "FYfgwCx4N7A": 0b0100000000,
                     "Rj_7z4KdJi0": 0b0110000000,
                         "V_bxAXiI3iY": 0b0100010000,
-                            "KuJIyXK9yYw": 0b0100010000,
+                            "KuJIyXK9yYw": 0b0100010000, /* love-chan installed */
                                 "EaRByR8FB_0": 0b0100000000,
                                     "10JqiG11GSc": 0b0100000000,
                                         "rUg1gIXICKI": 0b0100000000,
@@ -256,6 +257,7 @@ var log = {
                                     "iOHEv77qC4w": 0b0100000000,
                                         "cWwohKOmgqA": 0b0100000000,
     /* A.I.Games */
+                                        "5Aoyz0kDyH8": 0b0100000000,
     "9cOVmaEhfJw": 0b0100000000,
         "LWnh_ULTyIg": 0b0100000000,
             "YVYYMghyRXc": 0b0100000000,
@@ -343,7 +345,7 @@ var log = {
                     "ccvdlXAxx0o": 0b0000000100,
                         "J58HhPL4FiE": 0b0100000000,
                             "S6IqAaCFK5M": 0b0000000100,
-                                "IQGnLUjuTH4": 0b0000000100,
+                                "IQGnLUjuTH4": 0b0000000100, /* dynamax pyoko-pyoko */
                                     "orfZj7MrEyA": 0b0000000100,
                                         "TgHyROOS7ZE": 0b0100000000,
     "98ai9awGhRE": 0b0100000000,
@@ -470,12 +472,12 @@ var log = {
         "-9abMmTMPpE": 0b0100000000,
             "n3gpPv4MKoA": 0b0100000000,
                 "iea6AnJwG34": 0b0100000000,
-                    "FYOCkxJjiZw": 0b0100000100,
+                    "FYOCkxJjiZw": 0b0100000100, /* first ai-pii game */
                         "urYTym393Pk": 0b0100000000,
                             "NeSw8ImAi2E": 0b0100000000,
                                 "oIWs9SDSmy8": 0b0100000000,
                                     "PY_YmyPR-XM": 0b0100000000,
-                                        "p7X0QCdcvmE": 0b0100010000,
+                                        "p7X0QCdcvmE": 0b0100010000, /* first love-chan game */
     "VRepUjJPqvY": 0b0100000000,
         "ntHblOLGCcE": 0b0100000000,
             "imG1lDnOOlc": 0b0100000000,

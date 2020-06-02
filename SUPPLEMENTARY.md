@@ -25,7 +25,7 @@ AI-pii explained this absence by saying AI-chan was busy preparing for Summer So
 
 [Activ8's statement](https://twitter.com/8AndAHalfTails/status/1162335355040931841) added on, saying that Love-chan and AI-pii had taken over A.I.Channel and A.I.Games to better acquaint the fans while AI-chan focused on music. (This was a mere explanation of the ongoing situation, not a declaration of a permanent shift of activities.)
 
-AI-chan returned the same day of Activ8's statement in [a livestream](https://youtu.be/x58aOzpWoGU) where she also explained her absence. (As many commenters point out, there are moments where it sounds like she's crying. *Was she forced by upd8 to cover up the real situation? Was she sad about fans' reactions to the new AIs? Was she dealing with a personal issue at the time? Was it even crying?* I don't know. I won't surmise anything from this.)
+AI-chan returned the same day of Activ8's statement in [a livestream](https://youtu.be/x58aOzpWoGU) where she also explained her absence. (As many commenters point out, there are moments where it sounds like she's crying. *Was she forced by upd8 to cover up the real situation? Was she sad about fans' reactions to the new AIs? Was she dealing with a personal issue at the time? Was it even crying? Was it just weird laughter?* I don't know. I won't surmise anything from this.)
 
 In the month after Summer Sonic, her uploads were still scarce (as stated in the previous section, some were from the June backlog).
 
