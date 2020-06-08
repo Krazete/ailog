@@ -1,5 +1,9 @@
 var log = {
     /* A.I.Channel */
+    "QZINM9VY2eU": 0b0100000000,
+        "aXzP8Kw294s": 0b0100000000,
+            "5KyE3TR3j5I": 0b0100000000,
+                "UjN7jPehRcw": 0b0100000000,
                     "jiozWWb6RvA": 0b0110000000,
                         "WqjlvkL1fDg": 0b0101010110,
                             "BcXAntXEPOU": 0b0100100100,
@@ -257,6 +261,8 @@ var log = {
                                     "iOHEv77qC4w": 0b0100000000,
                                         "cWwohKOmgqA": 0b0100000000,
     /* A.I.Games */
+                                "OF7N70iXPd8": 0b0100000000,
+                                    "PLPojY4Dr3c": 0b0100000000,
                                         "5Aoyz0kDyH8": 0b0100000000,
     "9cOVmaEhfJw": 0b0100000000,
         "LWnh_ULTyIg": 0b0100000000,
@@ -489,6 +495,7 @@ var log = {
                                     "9LiqSTVnkDU": 0b0100000000,
                                         "Z27HoSoMeAY": 0b0100000000,
     /* A.I.Channel China */
+                    "9HRst7WFS74": 0b0000000001,
                         "UUgug00s4EE": 0b0000000001,
                             "Mv5gIEDkgAw": 0b0000000001,
                                 "JAXvjcXxkzU": 0b0000000001,
