@@ -39,7 +39,7 @@ Both versions lazy load all thumbnails for efficiency and faster initialization.
 
 ### Logging
 
-I reviewed and marked all #?#?#?#?#?#?#?#? videos myself.
+I reviewed and marked all 534 videos myself.
 Though I thoroughly checked each video, I may have missed or mismarked some entries.
 
 I would've missed AI-chan and Love-chan in AI-pii's Christmas livestream if I hadn't checked the last few minutes knowing it was the last of 3 livestreams that day.
