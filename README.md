@@ -1,6 +1,6 @@
 # Kizuna AI Attendance Log
 
-An interactive log of all videos on [A.I.Channel](https://www.youtube.com/aichannel), [A.I.Games](https://www.youtube.com/aigamesdayo), and [A.I.Channel China](https://www.youtube.com/channel/UCArUdy5xj0i0cTuhPHRVMpw) from the day Love-chan and AI-pii were installed to the day they resigned from the identity of Kizuna AI and formed [love-pii Channel](https://www.youtube.com/channel/UCYm8zALd2uHqyy6C1tb4_zA).
+An interactive log of all videos on [A.I.Channel](https://www.youtube.com/aichannel), [A.I.Games](https://www.youtube.com/aigamesdayo), and [A.I.Channel China](https://www.youtube.com/channel/UCArUdy5xj0i0cTuhPHRVMpw) from the day Love-chan and AI-pii were installed to the day of their first livestream on [love-pii Channel](https://www.youtube.com/channel/UCYm8zALd2uHqyy6C1tb4_zA) using their own distinct models.
 
 Its main purpose is to show which videos AI-chan, Black AI, Love-chan, AI-pii, and AI-bro participated in.
 
@@ -39,7 +39,7 @@ Both versions lazy load all thumbnails for efficiency and faster initialization.
 
 ### Logging
 
-I reviewed and marked all 488 videos myself.
+I reviewed and marked all #?#?#?#?#?#?#?#? videos myself.
 Though I thoroughly checked each video, I may have missed or mismarked some entries.
 
 I would've missed AI-chan and Love-chan in AI-pii's Christmas livestream if I hadn't checked the last few minutes knowing it was the last of 3 livestreams that day.
