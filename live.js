@@ -18,9 +18,9 @@ var channels = {
     }
 };
 
-function onerror(error) {
-    console.error(error);
-    if (error.status == 403) {
+function onerror(e) {
+    console.error(e);
+    if (e.error.code == 403) {
         location = "static.html";
     }
 }

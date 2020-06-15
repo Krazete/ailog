@@ -28,6 +28,12 @@ p, ul {
 h1, h2, h3, p, ul {
     margin: 8px 0;
 }
+a {
+    color: var(--ai);
+}
+a:visited {
+    color: gray;
+}
 
 .flexbox {
     display: flex;
