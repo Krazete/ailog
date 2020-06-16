@@ -38,7 +38,7 @@ function loadClient() {
 
 function loadStatistics(channel, videoIds) {
     var params = {
-        "part": ["statistics", "contentDetails"],
+        "part": ["statistics", "contentDetails", "localizations"],
         "id": videoIds
     };
 
@@ -65,6 +65,11 @@ function loadStatistics(channel, videoIds) {
                 channels[channel].videos[item.id].duration = duration;
                 channels[channel].videos[item.id].views = views;
                 channels[channel].videos[item.id].rating = rating;
+
+                if ("localizations" in item && "en" in item.localizations) {
+                    var label = unit.getElementsByClassName("title")[0];
+                    label.innerHTML = item.localizations.en.title;
+                }
             }
         }
     }
