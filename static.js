@@ -45,7 +45,7 @@ function loadChannels(response) {
     for (var channel in channels) {
         var container = document.getElementById(channel);
 
-        if (channels[channel].initialized && !channels[channel].newPageToken) {
+        if (channels[channel].initialized && !channels[channel].nextPageToken) {
             container.classList.add("complete");
         }
 
