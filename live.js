@@ -69,6 +69,7 @@ function loadStatistics(channel, videoIds) {
                 if ("localizations" in item && "en" in item.localizations) {
                     var label = unit.getElementsByClassName("title")[0];
                     label.innerHTML = item.localizations.en.title;
+                    channels[channel].videos[item.id].title = item.localizations.en.title;
                 }
             }
         }
