@@ -38,4 +38,4 @@ From October 2019 on, she seemed to have actually returned to YouTube. Often app
 This is where the replacement rumor should've ended.
 
 But of course it didn't, which is partly why Love-chan and AI-pii felt the need to shed the identity of Kizuna AI and [leave her channel](https://youtu.be/AmLFSguxTRY).
-The rumor will undoubtedly still persist, but at least it's easier to debunk now.
+The rumor will undoubtedly persist, but at least it's easier to debunk now.
