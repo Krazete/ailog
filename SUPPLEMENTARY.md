@@ -1,15 +1,17 @@
 # The First Three Months
 
-The attendance log doesn't show the full picture.
+The attendance log doesn't show the full picture. The [replacement conspiracy theory](https://www.bilibili.com/read/cv3226164) might not have any credence today, but it did seem plausible in the beginning considering the context.
 
-The [replacement conspiracy theory](https://www.bilibili.com/read/cv3226164) has no credence today, but it did seem plausible in the beginning.
+In April 2019, there was news that the Unlimited staff was mistreating members of the Game Club Project. Later in June, Unlimited began replacing the voice talents. They [justified these actions on July 17](https://gameclubproject.jp/20190717info/) by explaining that the Game Club Project members were never VTubers; they were actually CTubers, or Character YouTubers. Undermining the importance of the voice talents didn't sit well with fans, and the channel still suffers from an average like-dislike ratio of less than 50% to this day (July 2020).
+
+Kizuna AI cloned herself during the same period of time, so naturally people saw some similarities and assumed the worst.
 
 ## Absence
 
 In the three months following AI Party 2019, AI-chan's uploads seemed to come from a backlog of videos recorded before the event. For example:
 
 * Love-chan and AI-pii sometimes used the newer 3D model (apparent from the updated shoulders and bangs); AI-chan always used the old 3D model.
-* A snapshot of her [face filter video in September](https://youtu.be/Qbu3GhkT7Cc) was posted [on Twitter back in June](https://twitter.com/aichan_nel/status/1140843072797851648).
+* A snapshot of her [face filter video in September](https://youtu.be/Qbu3GhkT7Cc) was posted [on Twitter way back in June](https://twitter.com/aichan_nel/status/1140843072797851648).
 
 So while she showed up in videos, AI-chan did indeed appear to be absent for a while.
 
@@ -36,4 +38,4 @@ From October 2019 on, she seemed to have actually returned to YouTube. Often app
 This is where the replacement rumor should've ended.
 
 But of course it didn't, which is partly why Love-chan and AI-pii felt the need to shed the identity of Kizuna AI and [leave her channel](https://youtu.be/AmLFSguxTRY).
-The rumor will probably still persist, but it's much easier to debunk now.
+The rumor will undoubtedly still persist, but at least it's easier to debunk now.
