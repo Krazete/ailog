@@ -3,12 +3,8 @@
 This project was made mostly in response to the common misinformed claim that the original has been replaced or was being forced out by upd8.
 This was never the case.
 
-## Addressing Rumors
-
 AI-chan said during AI Party 2019 that [she never planned on leaving](https://warosu.org/jp/thread/21612492#p21615639).
 A month later, AI-pii [addressed the growing concerns in her livestream](https://youtu.be/IwIoDYymgVs?t=61) saying AI-chan wasn't leaving, and she'd bring her back if she did.
-
-## Activities Beyond YouTube
 
 During Love-chan's and AI-pii's existence as Kizuna AIs, AI-chan:
 
