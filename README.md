@@ -8,7 +8,7 @@ Its main purpose is to show which videos AI-chan, Black AI, Love-chan, AI-pii, a
 
 ## Symbols
 
-The website's symbols for each AI should be obvious, but here's a chart anyway:
+The website already explains the symbols, but here's another chart including each AI's former and alternative nicknames:
 
 |Symbol|Version of Kizuna AI|
 |:-:|-|
@@ -35,23 +35,7 @@ There are two versions of the attendance log.
 
 Both versions lazy load all thumbnails for efficiency and faster initialization.
 
-## Additional Notes
-
-### Logging
-
-I reviewed and marked all 534 videos myself.
-Though I thoroughly checked each video, I may have missed or mismarked some entries.
-
-I would've missed AI-chan and Love-chan in AI-pii's Christmas livestream if I hadn't checked the last few minutes knowing it was the last of 3 livestreams that day.
-I also would've missed Love-chan's participation in AI-pii's 9-hour livestream if I hadn't checked timestamps in the comment section.
-
-If I did get anything wrong, please let me know.
-
-* Gmail: krazete@gmail.com
-* Discord: Krazete#7038
-* Reddit: u/krazete
-
-### Unlisted and Members-Only Videos
+## Unlisted and Members-Only Videos
 
 The website uses the automatically generated Channel Uploads playlist for each channel, which means it only includes publicly listed videos.
 
@@ -59,7 +43,7 @@ The [A.I.Games Video List](https://www.youtube.com/playlist?list=PLWkRfirH7n-tCg
 
 The only notable exceptions are the members-only [AI-pii stream of upd8's Pokémon Sword and Shield Cup](https://youtu.be/AQuB3W1p4Yg) and the unlisted [Love-chan and AI-pii stream of Man of Medan](https://youtu.be/dzmzokLdeIA).
 
-### A.I.Channel China
+## A.I.Channel China
 
 I realize A.I.Channel China's videos were uploaded on Bilibili much earlier than their YouTube publish date.
 This means AI-bro's content is not truly in chronological order.
@@ -68,27 +52,16 @@ More importantly, it means some later videos which should be included are not di
 Due to the rarity of collaborations on A.I.Channel China, this error is a minor one.
 Thus, I did not make any attempt to fix the issue.
 
-### Motivation
+## Logging
 
-This project was made mostly in response to the common [misinformed claim](SUPPLEMENTARY.md) that the original has been replaced or was being forced out by upd8.
-This was never the case.
+I reviewed and marked all 534 videos myself.
+Though I thoroughly checked each video, I may have missed or mismarked some entries.
 
-AI-chan said during AI Party 2019 that [she never planned on leaving](https://warosu.org/jp/thread/21612492#p21615639).
-A month later, AI-pii [addressed the growing concerns in her livestream](https://youtu.be/IwIoDYymgVs?t=61) saying AI-chan wasn't leaving, and she'd bring her back if she did.
+For example, I would've missed AI-chan and Love-chan in AI-pii's Christmas livestream if I hadn't checked the last few minutes knowing it was the last of 3 livestreams that day.
+I also would've missed Love-chan's participation in AI-pii's 9-hour livestream if I hadn't checked timestamps in the comment section.
 
-During Love-chan's and AI-pii's existence as Kizuna AIs, AI-chan:
+If I did get anything wrong, please let me know.
 
-* released the song [Sky High](https://youtu.be/yLrstz80MKs) (which, as AI-pii mentioned in the previous link, does not insinuate AI-chan's departure), the cover song [Kizunami](https://youtu.be/vHeK-SDTMyU), and the album [Replies](https://youtu.be/Io_GOr3YAN0),
-* [performed](https://i.imgur.com/nAEKjBZ.png) at [Summer Sonic](https://youtu.be/O57ueFS0M6o), [DIVE XR Festival](https://twitter.com/aichan_nel/status/1175769837622030337), [J-WAVE Innovation World Festa](https://twitter.com/aichan_nel/status/1173189719578042369), [Bilibili Macro Link Visual Release](https://twitter.com/aichan_nel/status/1152094751849504770), and
-* cohosted the television program [てえてえTV](https://cu.ntv.co.jp/program/tetete2/) alongside fellow upd8 members the Omega Sisters
-
-Meanwhile, her voice model Kasuga Nozomi took on some voice acting roles:
-
-* Granbelm (as Mimi Rin)
-* Infinite Dendrogram (as the interface AI)
-* Shirobako Movie (as a virtual idol *(I haven't seen it; I'm just taking Discord user Guest#3616's word for it.)*)
-
-In short, she wasn't replaced.
-She was busy.
-
-Hopefully this project helps to clarify the fact that AI-chan never left.
+* Gmail: krazete@gmail.com
+* Discord: Krazete#7038
+* Reddit: u/krazete
