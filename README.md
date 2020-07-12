@@ -65,3 +65,8 @@ If I did get anything wrong, please let me know.
 * Gmail: krazete@gmail.com
 * Discord: Krazete#7038
 * Reddit: u/krazete
+
+## Supplementary Reading
+
+* [MOTIVATION.md](https://github.com/Krazete/ailog/blob/master/MOTIVATION.md)
+* [CONTEXT.md](https://github.com/Krazete/ailog/blob/master/CONTEXT.md)

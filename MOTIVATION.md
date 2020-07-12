@@ -22,3 +22,8 @@ In short, she wasn't replaced.
 She was busy.
 
 Hopefully this project helps to clarify the fact that AI-chan never left.
+
+## Supplementary Reading
+
+* [README.md](https://github.com/Krazete/ailog/blob/master/README.md)
+* [CONTEXT.md](https://github.com/Krazete/ailog/blob/master/CONTEXT.md)

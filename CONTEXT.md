@@ -39,3 +39,8 @@ This is where the replacement rumor should've ended.
 
 But of course it didn't, which is partly why Love-chan and AI-pii felt the need to shed the identity of Kizuna AI and [leave her channel](https://youtu.be/AmLFSguxTRY).
 The rumor will undoubtedly persist, but at least it's easier to debunk now.
+
+## Supplementary Reading
+
+* [README.md](https://github.com/Krazete/ailog/blob/master/README.md)
+* [MOTIVATION.md](https://github.com/Krazete/ailog/blob/master/MOTIVATION.md)
