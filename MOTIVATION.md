@@ -11,7 +11,7 @@ During Love-chan and AI-pii's existence as Kizuna AIs, AI-chan was doing things 
 * released her original song [Sky High](https://youtu.be/yLrstz80MKs)
   * some people believed the lyrics insinuated AI-chan's departure; as AI-pii mentioned in [the previous link](https://youtu.be/IwIoDYymgVs?t=61), this is not true
 * released a cover of [Kizunami](https://youtu.be/vHeK-SDTMyU)
-* released her first EP [Replies](https://youtu.be/Io_GOr3YAN0),
+* released her first EP [Replies](https://youtu.be/Io_GOr3YAN0)
 * [performed](https://i.imgur.com/nAEKjBZ.png) at [Summer Sonic](https://youtu.be/O57ueFS0M6o)
 * performed at [DIVE XR Festival](https://twitter.com/aichan_nel/status/1175769837622030337)
 * performed at [J-WAVE Innovation World Festa](https://twitter.com/aichan_nel/status/1173189719578042369)
@@ -22,7 +22,7 @@ Meanwhile, her voice model Kasuga Nozomi took on some voice acting roles:
 
 * Granbelm (as Mimi Rin)
 * Infinite Dendrogram (as the interface AI)
-* Shirobako Movie (as a virtual idol *(I haven't seen it to confirm this; I'm taking Discord user [Guest#3616's word](https://discord.com/channels/306517676535185409/604887320201658399/683381006925168665) for it.)*)
+* Shirobako Movie (as a virtual idol [according to Discord user Guest#3616](https://discord.com/channels/306517676535185409/604887320201658399/683381006925168665))
 
 In short, she wasn't replaced.
 She was busy.

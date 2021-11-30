@@ -1,8 +1,8 @@
 # The First Three Months
 
 The attendance log doesn't show the full context of the [replacement conspiracy theory](https://bilibili.com/read/cv3226164).
-Many fans today ridicule the idea that AI-chan was replaced, but the threat of replacement seemed quite real in the beginning.
-This document is an attempt to explain how the rumors began.
+Fans today ridicule the idea that AI-chan was replaced, but the threat of replacement seemed quite real in the beginning.
+This document is an attempt to explain how the rumors started.
 
 ## Precursor
 
@@ -21,7 +21,7 @@ In the three months following A.I.Party! 2019, all video uploads featuring AI-ch
 * A snapshot of her [face filter video in September](https://youtu.be/Qbu3GhkT7Cc) was posted [on Twitter way back in June](https://twitter.com/aichan_nel/status/1140843072797851648).
 
 It appeared as if they were using a reserve of AI-chan videos recorded before her birthday.
-To many, this made it seem like they were trying to trick fans into believing AI-chan was still around when she really wasn't.
+To many, this made it seem like they were trying to trick people into believing AI-chan was still around when she really wasn't.
 
 ## Explanations
 
@@ -35,7 +35,7 @@ Kizuna AI's voice model, Kasuga Nozomi, had a voice acting role in Granbelm shor
 AI-pii explained the absence by saying AI-chan was busy preparing for Summer Sonic in August and would be back on the channel after the event.
 
 [Activ8's statement](https://twitter.com/8AndAHalfTails/status/1162335355040931841) added on, saying that Love-chan and AI-pii had taken over A.I.Channel and A.I.Games to better acquaint the fans while AI-chan focused on music.
-(This was merely an explanation of the ongoing situation, but many confused fans believed it was a declaration of a permanent shift of activities.)
+(This was merely an explanation of the ongoing situation, but confused readers believed it was a declaration of a permanent shift of activities.)
 
 AI-chan returned the same day of Activ8's statement in [a livestream](https://youtu.be/x58aOzpWoGU) where she also explained her absence.
 (Some commenters point out moments where it sounds like she's crying. *Was she forced by upd8 to cover up the real situation? Was she sad about fans' reactions to the new AIs? Was she dealing with a personal issue at the time? Was it even crying? Was it just weird laughter?* I don't know. I won't speculate anything from a few seconds of ambiguity.)

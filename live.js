@@ -55,14 +55,13 @@ function loadStatistics(channel, videoIds) {
 
                 var sentiment = unit.getElementsByClassName("sentiment")[0];
                 sentiment.style.backgroundColor = "#3ea6ff";
-                sentiment.innerHTML = likes + " likes";
+                sentiment.innerHTML = likes.toLocaleString() + " likes";
 
                 var viewcount = unit.getElementsByClassName("viewcount")[0];
                 viewcount.innerHTML = parseViews(views);
 
                 channels[channel].videos[item.id].duration = duration;
                 channels[channel].videos[item.id].views = views;
-                channels[channel].videos[item.id].rating = rating;
 
                 if ("localizations" in item && "en" in item.localizations) {
                     var label = unit.getElementsByClassName("title")[0];
