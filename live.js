@@ -49,15 +49,13 @@ function loadStatistics(channel, videoIds) {
                 var duration = item.contentDetails.duration;
                 var views = parseInt(item.statistics.viewCount);
                 var likes = parseInt(item.statistics.likeCount);
-                var dislikes = parseInt(item.statistics.dislikeCount);
-                var rating = 100 * likes / (likes + dislikes);
 
                 var thumb = unit.getElementsByClassName("thumb")[0];
                 thumb.dataset.duration = parseDuration(duration);
 
                 var sentiment = unit.getElementsByClassName("sentiment")[0];
-                sentiment.style.backgroundImage = parseRatingBar(rating);
-                sentiment.innerHTML = parseRating(rating);
+                sentiment.style.backgroundColor = "#3ea6ff";
+                sentiment.innerHTML = likes + " likes";
 
                 var viewcount = unit.getElementsByClassName("viewcount")[0];
                 viewcount.innerHTML = parseViews(views);
