@@ -56,7 +56,9 @@ Though I thoroughly checked each video, I may have missed or mismarked some entr
 For example, I would've missed AI-chan and Love-chan in AI-pii's Christmas livestream if I hadn't checked the last few minutes knowing it was the last of 3 livestreams that day.
 I also would've missed Love-chan's participation in AI-pii's 9-hour livestream if I hadn't checked timestamps in the comment section.
 
-If I got anything wrong, please let me know.
+Sometime after Love-chan and AI-pii left, A.I.Channel and A.I.Games went back and labeled every video appropriately with "【＊】" and "【＃】" (in the Japanese titles; many English-localized titles were left unchanged). These retroactive labels seem to corroborate my own.
+
+Still, if I got anything wrong, please let me know.
 
 * Gmail: krazete@gmail.com
 * Discord: Krazete#7038
