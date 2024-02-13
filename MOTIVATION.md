@@ -22,7 +22,7 @@ Meanwhile, her voice model Kasuga Nozomi took on some voice acting roles:
 
 * Granbelm (as Mimi Rin)
 * Infinite Dendrogram (as the interface AI)
-* Shirobako Movie (as a virtual idol [according to Discord user Guest#3616](https://discord.com/channels/306517676535185409/604887320201658399/683381006925168665))
+* Shirobako Movie (as a virtual idol)
 
 In short, she wasn't replaced.
 She was busy.

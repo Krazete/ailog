@@ -51,7 +51,7 @@ Although her appearances weren't as frequent as they were before (she used to up
 This is where the replacement rumor should've ended.
 But it didn't, which is partly why Love-chan and AI-pii felt the need to shed the identity of Kizuna AI and [leave her channel](https://youtu.be/AmLFSguxTRY) in May 2020.
 
-It still persists among the uninformed and even [some fans](https://twitter.com/NickyBellic111) that claim they won the war against Activ8, but thankfully the rumor is now dead in the general VTuber community.
+It still persists among the uninformed and even some fans who ironically claim they saved Kizuna AI, but thankfully the rumor is now dead in the general VTuber community.
 
 ## Supplementary Reading
 
