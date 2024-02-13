@@ -66,7 +66,11 @@ Still, if I got anything wrong, please let me know.
 
 ## Supplementary Reading
 
+* README.md
 * [MOTIVATION.md](https://github.com/Krazete/ailog/blob/master/MOTIVATION.md)
 * [CONTEXT.md](https://github.com/Krazete/ailog/blob/master/CONTEXT.md)
+* [ADDENDUM.md](https://github.com/Krazete/ailog/blob/master/ADDENDUM.md)
+  * [knozomi.md](https://github.com/Krazete/ailog/blob/master/knozomi.md)
+  * [jmatsuda.md](https://github.com/Krazete/ailog/blob/master/jmatsuda.md)
 * [Infographic Timeline](https://twitter.com/kizunaaiss/status/1327967483932725251)
 * [Detailed Timeline](https://docs.google.com/document/d/1wFML_LXAbKEIuRu42vN_GW7hIqqPU4DDfQALbvCv4FI)
