@@ -10,7 +10,9 @@ I still believe Love-chan and AI-pii were added to the team mainly to reduce AI-
 
 ## Pre-Return Interviews
 
-Exactly three years after The Last Live, [Kizuna AI returned](https://youtu.be/j53m3DSqhKo). In the months leading up to this, Kasuga Nozomi participated in two two-part interviews opening up more about her experience with Kizuna AI. More pertinently, she talks about the "split scandal" in both interviews, recalling how she was against the announcement of her role as voice model of Kizuna AI and her appointment as advisor to Kizuna AI Inc. but conceded in order to reassure fans.
+Exactly three years after The Last Live, [Kizuna AI returned](https://youtu.be/j53m3DSqhKo). In the months leading up to this, Kasuga Nozomi participated in two two-part interviews opening up more about her experience with Kizuna AI. More pertinently, she talks about the "split scandal" in both, recalling how she was against the announcement of her role as voice model of Kizuna AI and her appointment as advisor to Kizuna AI Inc. but conceded in order to reassure fans.
+
+The interviews cover a much wider range of topics than what's relevant to this repository, such as the voice model audition, thoughts about VTuber culture, Kasuga Nozomi's new VTuber person (Non-chii), and plans for the future.
 
 * KAI-YOU Premium interview with Kasuga Nozomi
   * Part 1: https://premium.kai-you.net/article/823
@@ -19,9 +21,7 @@ Exactly three years after The Last Live, [Kizuna AI returned](https://youtu.be/j
   * Part 1: https://www.businessinsider.jp/article/2502-kizuna-ai-interview1/
   * Part 2: https://www.businessinsider.jp/article/2502-kizuna-ai-interview2/
 
-The interviews cover a much wider range of topics than what's relevant to this repository, such as the voice model audition, thoughts about VTuber culture, Kasuga Nozomi's new VTuber person (Non-chii), and plans for the future.
-
-I haven't included copies of them in this repository since they are exclusive to members, but they are free to read. Business Insider requires a free account and KAI-YOU Premium requires a free trial (though you may still be charged a foreign transaction fee).
+I haven't added copies of these articles to this project since they are exclusive to members, but they are free to read. Business Insider requires a free account and KAI-YOU Premium requires a free trial (though you may still be charged a foreign transaction fee).
 
 ## Supplementary Reading
 
